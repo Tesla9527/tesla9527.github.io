@@ -10,6 +10,12 @@ tags:
     - Python
     - Locust
 ---
+
+安装最新版Locust
+
+    pip install git+git://github.com/locustio/locust.git@master#egg=locustio
+
+
 ```python
 from locust import HttpLocust, TaskSet, task
 from datetime import datetime
