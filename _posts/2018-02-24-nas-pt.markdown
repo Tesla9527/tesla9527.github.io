@@ -13,6 +13,7 @@ tags:
 
 1. 千兆局域网
 2. 群晖NAS
+![img](/img/in-post/DS218Plus.png)
 3. PT:	[https://tp.m-team.cc/index.php](https://tp.m-team.cc/index.php)
 4. 海美迪盒子
 5. Kodi
