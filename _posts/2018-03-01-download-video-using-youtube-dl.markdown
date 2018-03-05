@@ -20,6 +20,7 @@ pip install youtube-dl
 ## 安装ffmpeg
 
 Google一下ffmpeg，下载后解压到一个路径并添加环境变量。这个工具主要是用来做1080P视频的合并的。如果不使用这个工具，最高只能在youtube上下载720P的视频。
+![img](/img/in-post/youtube/4.jpg)
 
 ## 下载youtube视频示例
 
