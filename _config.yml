@@ -110,11 +110,11 @@ friends: [
         href: "http://python3-cookbook.readthedocs.io/zh_CN/latest/index.html"
     },
     {
-      title: "会飞的污熊",
-        href: "https://www.xncoding.com/"
-    },
-    {
       title: "500 Lines or Less",
         href: "http://www.aosabook.org/en/index.html"
+    },  
+    {
+      title: "pythonprogramming.net",
+        href: "https://www.pythonprogramming.net/"
     }
 ]
