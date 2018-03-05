@@ -19,9 +19,11 @@ youtube-dl地址：[https://github.com/rg3/youtube-dl](https://github.com/rg3/yo
 ![img](/img/in-post/youtube/3.jpg)
 
 1. 获取视频信息
+
 youtube-dl -F "https://www.youtube.com/watch?v=8h30JgKkZQI"
 ![img](/img/in-post/youtube/1.jpg)
 
 2. 执行下载（如果要下载1080P的，需要安装ffmpeg）
+
 youtube-dl -f 137+140 "https://www.youtube.com/watch?v=8h30JgKkZQI"
 ![img](/img/in-post/youtube/2.jpg)
