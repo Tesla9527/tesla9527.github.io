@@ -40,3 +40,21 @@ Google一下ffmpeg，下载后解压到一个路径并添加环境变量。这�
 	![img](/img/in-post/youtube/2.jpg)
 
 ---
+
+## 下载b站视频示例
+比如说我们要下载这个鬼畜视频
+![img](/img/in-post/youtube/5.jpg)
+
+1.	获取视频信息
+
+	youtube-dl -F "https://www.bilibili.com/video/av5267589/"
+
+	![img](/img/in-post/youtube/6.jpg)
+
+2.	执行下载
+
+	youtube-dl -f 1 "https://www.bilibili.com/video/av5267589/"
+
+	![img](/img/in-post/youtube/7.jpg)
+
+---
