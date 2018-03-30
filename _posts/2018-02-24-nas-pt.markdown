@@ -15,5 +15,7 @@ tags:
 2. 群晖NAS
 ![img](/img/in-post/DS218Plus.png)
 3. PT:	[https://tp.m-team.cc/index.php](https://tp.m-team.cc/index.php)
-4. 海美迪盒子
-5. Kodi
+4. shield tv安卓盒子  [https://www.nvidia.com/en-us/shield/shield-tv/](https://www.nvidia.com/en-us/shield/shield-tv/)
+![img](/img/in-post/shield-tv.png)
+5. Kodi [https://kodi.tv/](https://kodi.tv/)
+![img](/img/in-post/kodi.jpg)
