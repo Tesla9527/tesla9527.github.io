@@ -14,3 +14,5 @@ python datetime模块用strftime 格式化时间
 from datetime import datetime
 print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 ```
+输出结果：
+![img](/img/in-post/python-datetime/datetime01.png)
