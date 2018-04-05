@@ -9,7 +9,8 @@ catalog:    false
 tags:
     - Python
 ---
-转载至[https://zhuanlan.zhihu.com/p/34290391](https://zhuanlan.zhihu.com/p/34290391)
+>转载至[https://zhuanlan.zhihu.com/p/34290391](https://zhuanlan.zhihu.com/p/34290391)
+
 getHeadImgs.py，执行完该python文件后，会将好友的头像图片下载到指定目录
 ```python
 import itchat
