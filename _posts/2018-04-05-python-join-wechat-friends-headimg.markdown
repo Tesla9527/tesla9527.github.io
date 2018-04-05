@@ -9,7 +9,7 @@ catalog:    false
 tags:
     - Python
 ---
-
+转载至[https://zhuanlan.zhihu.com/p/34290391](https://zhuanlan.zhihu.com/p/34290391)
 getHeadImgs.py，执行完该python文件后，会将好友的头像图片下载到指定目录
 ```python
 import itchat
@@ -64,5 +64,5 @@ for item in pathList:
         break
 NewImage.save("D:/Tesla/" +"final.jpg")
 ```
-拼接出来的图片：
+拼接出来的图片（PS：图侵删）
 ![img](/img/in-post/final.jpg)
