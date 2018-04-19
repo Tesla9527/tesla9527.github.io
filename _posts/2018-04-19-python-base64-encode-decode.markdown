@@ -33,4 +33,5 @@ a = b"eyJjb250YWN0X21vYmlsZSI6IjEzMjkxMTEwOTg3IiwiREFTMiI6eyJzdWNjZXNzIjp0cnVlLC
 result = base64.decodebytes(a)
 print(result.decode("utf-8"))
 ```
+Test Result:
 ![img](/img/in-post/base64/2.png)
