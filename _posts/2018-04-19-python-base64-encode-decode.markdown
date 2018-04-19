@@ -9,7 +9,6 @@ catalog:    false
 tags:
     - Python
 ---
-base64编码
 ```python
 import base64
 
@@ -22,7 +21,6 @@ print(str(result, 'utf-8'))
 Test Result:
 ![img](/img/in-post/base64/1.png)
 
-base64解码
 ```python
 import base64
 
