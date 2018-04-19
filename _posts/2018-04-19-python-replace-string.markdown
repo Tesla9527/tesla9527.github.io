@@ -10,6 +10,7 @@ tags:
     - Python
 ---
 >在工作中遇到一种需求，需要将一个csv文件中的各个key的值替换到json中的对应的值，写好脚本后运行也正常。但是觉得还可以继续优化，今天使用了一个for循环，使得脚本简练了不少。
+
 ```python
 import csv
 
@@ -46,4 +47,5 @@ output_csv_file = r"D:\Tesla\xiaomi\output\xiaomi_result_json.csv"
 write_dict_to_csv(output_csv_file, csv_columns, result)
 
 ```
+
 要替换的值我们先在original_json中写死。第一个要替换的值为啥从value101开始呢？因为如果从value1开始的话，后面可能又value11,value12...之类的值，替换value1的时候可能把value11,value12...也替换掉了，这样容易造成混乱。从value101开始的话，至少一直到value999也不会有覆盖的情况，而且从value101到value999也有899个值了，一般情况是够用了的。
