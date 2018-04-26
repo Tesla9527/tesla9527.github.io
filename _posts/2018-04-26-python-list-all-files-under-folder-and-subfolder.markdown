@@ -10,7 +10,7 @@ tags:
     - Python
 ---
 
-脚本如下：
+脚本如下
 ```python
 import os
 
@@ -27,3 +27,6 @@ print('----------------')
 for i in result:
     print(i)
 ```
+
+运行结果
+![img](/img/in-post/python-list-files/1.png)
