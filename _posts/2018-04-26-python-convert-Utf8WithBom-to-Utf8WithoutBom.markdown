@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "python将目录下的所有文件从UTF-8-BOM转换成UTF-8"
+title:      "python将目录下的所有文件转换成UTF-8 without BOM编码格式"
 subtitle:   ""
 date:       2018-04-26
 author:     "Tesla9527"
