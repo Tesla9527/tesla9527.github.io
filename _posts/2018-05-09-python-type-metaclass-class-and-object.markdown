@@ -1,11 +1,11 @@
 ---
 layout:     post
-title:      "python世界中的type，元类，类与对象"
+title:      "python的类与对象"
 subtitle:   ""
 date:       2018-05-09
 author:     "Tesla9527"
 header-img: "img/post-bg-alitrip.jpg"
-catalog:    true
+catalog:    false
 tags:
     - Python
 ---
