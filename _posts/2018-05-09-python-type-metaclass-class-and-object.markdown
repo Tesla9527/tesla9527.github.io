@@ -1,11 +1,11 @@
 ---
 layout:     post
-title:      "python的类与对象"
+title:      "python世界中的type，元类，类与对象"
 subtitle:   ""
 date:       2018-05-09
 author:     "Tesla9527"
 header-img: "img/post-bg-alitrip.jpg"
-catalog:    false
+catalog:    true
 tags:
     - Python
 ---
@@ -76,25 +76,3 @@ hello.say_hello()
 Hello, world. ----调用结果完全一样。
 ```
 我们回头看一眼最精彩的地方，道直接生出了二：
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
