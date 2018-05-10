@@ -671,6 +671,13 @@ In computer science, an object can be a variable, a data structure, a function, 
 
 [https://mail.python.org/pipermail/python-list/2015-June/691689.html](https://mail.python.org/pipermail/python-list/2015-June/691689.html)
 
+Everything in Python is an object because Python has no "primitive"
+or "unboxed" types, no machine values. This has nothing to do with
+metaclasses. Even if Python had no metaclasses, it could still be true
+that "everything is an object".
+
+感觉是想说，没有什么原生类型，所有对象都有 方法 与 数据成员 的,即使是 int 这个的类型,而 c++ , java 这样的，int 类型 是没有成员的
+
 我们再来看看另外一个例子：
 
 ```python
