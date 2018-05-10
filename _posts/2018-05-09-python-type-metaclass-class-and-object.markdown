@@ -600,3 +600,47 @@ if __name__ == '__main__':
 在stackoverflow上有一个回答，也是相当精彩。
 
 链接：[https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python](https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python)
+
+## 自我理解
+看完上面网友的文章之后，我尝试着进行自我理解。拿python的数据类型来分析，
+
+```python
+# python标准数据类型
+print(type(1)) # int类型
+print(type(3.14)) # float类型
+print(type(True)) # bool类型
+print(type(1j)) # complex类型
+print(type('I love you...')) # str类型
+print(type([1,1,2,3,5])) # list类型
+print(type((1,2,3))) # tuple类型
+print(type({1,2,3})) # set类型
+print(type({'name': 'Tesla', 'age': 28})) # dict类型
+print('---------------')
+# 定义一个类对象
+class Robot():
+	pass
+print('类对象内存地址：' + str(id(Robot)))
+print(type(Robot)) # 打印类对象的类型
+# 生成一个实例对象
+robot_timi = Robot()
+print('实例对象内存地址：' + str(id(robot_timi)))
+print(type(robot_timi)) # 打印实例对象的类型
+```
+
+输出：
+```
+<class 'int'>
+<class 'float'>
+<class 'bool'>
+<class 'complex'>
+<class 'str'>
+<class 'list'>
+<class 'tuple'>
+<class 'set'>
+<class 'dict'>
+---------------
+类对象内存地址：92967904
+<class 'type'>
+实例对象内存地址：88294128
+<class '__main__.Robot'>
+```
