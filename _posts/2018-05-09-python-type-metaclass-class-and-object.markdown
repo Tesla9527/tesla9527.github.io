@@ -596,3 +596,7 @@ if __name__ == '__main__':
 * 我是谁，我来自哪里，我要到哪里去
 
 ---
+
+在stackoverflow上有一个回答，也是相当精彩。
+
+链接：[https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python](https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python)
