@@ -671,6 +671,43 @@ In computer science, an object can be a variable, a data structure, a function, 
 
 [https://mail.python.org/pipermail/python-list/2015-June/691689.html](https://mail.python.org/pipermail/python-list/2015-June/691689.html)
 
+我们再来看看另外一个例子：
+
+```python
+class AAA():
+    aaa = 10
+
+# 情形1
+obj1 = AAA()
+obj2 = AAA()
+print(obj1.aaa, obj2.aaa, AAA.aaa)
+
+# 情形2
+obj1.aaa += 2
+print(obj1.aaa, obj2.aaa, AAA.aaa)
+
+# 情形3
+AAA.aaa += 3
+print(obj1.aaa, obj2.aaa, AAA.aaa)
+
+print(id(AAA.aaa))
+print(id(obj1.aaa))
+print(id(obj2.aaa))
+```
+
+输出：
+```
+10 10 10  
+12 10 10  
+12 13 13  
+1707988208
+1707988192
+1707988208
+```
+
+可以看到，id(AAA.aaa)与id(obj2.aaa)的值是一样的，说明他们指向的都是AAA类对象的属性aaa，而实例对象obj1想要更改类对象AAA的属性aaa的值，所以给ojb1单独绑定了一个他自己的属性aaa，并指向了另一块内存地址。
+
+
 ### 结论
 
 好吧，我认可了，python里面一切皆对象...
