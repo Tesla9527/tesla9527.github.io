@@ -619,7 +619,7 @@ print('---------------')
 # 定义一个类对象
 class Robot():
 	pass
-print('类对象内存地址：' + str(id(Robot)))
+print('类对象内存地址：' + str(id(Robot))) # id()函数用于获取对象的内存地址。
 print(type(Robot)) # 打印类对象的类型
 # 生成一个实例对象
 robot_timi = Robot()
