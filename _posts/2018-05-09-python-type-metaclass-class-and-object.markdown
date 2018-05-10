@@ -249,4 +249,341 @@ L2.add(1)
 >>>AttributeError: 'list' object has no attribute 'add'
 ```
 
-太棒了！学到这里，你是不是已经体验到了造物主的乐趣？
+太棒了！学到这里，你是不是已经体验到了造物主的乐趣？python世界的一切，尽在掌握。
+
+## 年轻的造物主，请随我一起开创新世界。
+
+我们选择两个领域，一个是Django的核心思想，“Object Relational Mapping”，即对象-关系映射，简称ORM。这是Django的一大难点，但学完了元类，一切变得清晰。你对Django的理解将更上一层楼！另一个领域是爬虫领域（黑客领域），一个自动搜索网络上的可用代理，然后换着IP去突破别的人反爬虫限制。
+这两项技能非常有用，也非常好玩！
+
+## 挑战一：通过元类创建ORM
+准备工作，创建一个Field类
+
+```python
+lass Field(object):
+
+    def __init__(self, name, column_type):
+        self.name = name
+        self.column_type = column_type
+
+    def __str__(self):
+        return '<%s:%s>' % (self.__class__.__name__, self.name)
+```
+
+它的作用是
+
+在Field类实例化时将得到两个参数，name和column_type，它们将被绑定为Field的私有属性，如果要将Field转化为字符串时，将返回“Field:XXX” ， XXX是传入的name名称。
+
+准备工作：创建StringField和IntergerField
+
+```python
+class StringField(Field):
+
+    def __init__(self, name):
+        super(StringField, self).__init__(name, 'varchar(100)')
+
+class IntegerField(Field):
+
+    def __init__(self, name):
+        super(IntegerField, self).__init__(name, 'bigint')
+```
+
+它的作用是
+
+在StringField,IntegerField实例初始化时，时自动调用父类的初始化方式。
+
+### 道生一
+
+```python
+class ModelMetaclass(type):
+
+    def __new__(cls, name, bases, attrs):
+        if name=='Model':
+            return type.__new__(cls, name, bases, attrs)
+        print('Found model: %s' % name)
+        mappings = dict()
+        for k, v in attrs.items():
+            if isinstance(v, Field):
+                print('Found mapping: %s ==> %s' % (k, v))
+                mappings[k] = v
+        for k in mappings.keys():
+            attrs.pop(k)
+        attrs['__mappings__'] = mappings # 保存属性和列的映射关系
+        attrs['__table__'] = name # 假设表名和类名一致
+        return type.__new__(cls, name, bases, attrs)
+```
+
+它做了以下几件事
+
+创建一个新的字典mapping
+将每一个类的属性，通过.items()遍历其键值对。如果值是Field类，则打印键值，并将这一对键值绑定到mapping字典上。
+将刚刚传入值为Field类的属性删除。
+创建一个专门的__mappings__属性，保存字典mapping。
+创建一个专门的__table__属性，保存传入的类的名称。
+
+### 一生二
+
+```python
+class Model(dict, metaclass=ModelMetaclass):
+
+    def __init__(self, **kwarg):
+        super(Model, self).__init__(**kwarg)
+
+    def __getattr__(self, key):
+        try:
+            return self[key]
+        except KeyError:
+            raise AttributeError("'Model' object has no attribute '%s'" % key)
+
+    def __setattr__(self, key, value):
+        self[key] = value
+
+    # 模拟建表操作
+    def save(self):
+        fields = []
+        args = []
+        for k, v in self.__mappings__.items():
+            fields.append(v.name)
+            args.append(getattr(self, k, None))
+        sql = 'insert into %s (%s) values (%s)' % (self.__table__, ','.join(fields), ','.join([str(i) for i in args]))
+        print('SQL: %s' % sql)
+        print('ARGS: %s' % str(args))
+```
+
+如果从Model创建一个子类User：
+
+```python
+class User(Model):
+    # 定义类的属性到列的映射：
+    id = IntegerField('id')
+    name = StringField('username')
+    email = StringField('email')
+    password = StringField('password')
+```
+
+这时
+id= IntegerField('id')就会自动解析为：
+Model.__setattr__(self, 'id', IntegerField('id'))
+因为IntergerField('id')是Field的子类的实例，自动触发元类的__new__，所以将IntergerField('id')存入__mappings__并删除这个键值对。
+
+### 二生三、三生万物
+
+当你初始化一个实例的时候并调用save()方法时候
+
+```python
+u = User(id=12345, name='Batman', email='batman@nasa.org', password='iamback')
+u.save()
+```
+
+这时先完成了二生三的过程：
+
+先调用Model.__setattr__，将键值载入私有对象
+然后调用元类的“天赋”，ModelMetaclass.__new__，将Model中的私有对象，只要是Field的实例，都自动存入u.__mappings__。
+
+接下来完成了三生万物的过程：
+
+通过u.save()模拟数据库存入操作。这里我们仅仅做了一下遍历__mappings__操作，虚拟了sql并打印，在现实情况下是通过输入sql语句与数据库来运行。
+
+输出结果为
+
+```python
+Found model: User
+Found mapping: name ==> <StringField:username>
+Found mapping: password ==> <StringField:password>
+Found mapping: id ==> <IntegerField:id>
+Found mapping: email ==> <StringField:email>
+SQL: insert into User (username,password,id,email) values (Batman,iamback,12345,batman@nasa.org)
+ARGS: ['Batman', 'iamback', 12345, 'batman@nasa.org']
+```
+
+年轻的造物主，你已经和我一起体验了由“道”演化“万物”的伟大历程，这也是Django中的Model版块核心原理。
+接下来，请和我一起进行更好玩的爬虫实战（嗯，你现在已经是初级黑客了）：网络代理的爬取吧！
+
+## 挑战二：网络代理的爬取
+
+### 准备工作，先爬个页面玩玩
+
+请确保已安装requests和pyquery这两个包。
+
+```python
+# 文件：get_page.py
+import requests
+
+base_headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+    'Accept-Encoding': 'gzip, deflate, sdch',
+    'Accept-Language': 'zh-CN,zh;q=0.8'
+}
+
+
+def get_page(url):
+    headers = dict(base_headers)
+    print('Getting', url)
+    try:
+        r = requests.get(url, headers=headers)
+        print('Getting result', url, r.status_code)
+        if r.status_code == 200:
+            return r.text
+    except ConnectionError:
+        print('Crawling Failed', url)
+        return None
+```
+
+这里，我们利用request包，把百度的源码爬了出来。
+
+试一试抓百度
+
+把这一段粘在get_page.py后面，试完删除
+
+```python
+if(__name__ == '__main__'):
+    rs = get_page('https://www.baidu.com')
+    print('result:\r\n', rs)
+```
+
+试一试抓代理
+
+把这一段粘在get_page.py后面，试完删除
+
+```python
+if(__name__ == '__main__'):
+    from pyquery import PyQuery as pq
+    start_url = 'http://www.proxy360.cn/Region/China'
+    print('Crawling', start_url)
+    html = get_page(start_url)
+    if html:
+        doc = pq(html)
+        lines = doc('div[name="list_proxy_ip"]').items()
+        for line in lines:
+            ip = line.find('.tbBottomLine:nth-child(1)').text()
+            port = line.find('.tbBottomLine:nth-child(2)').text()
+            print(ip+':'+port)
+```
+
+接下来进入正题：使用元类批量抓取代理
+
+### 批量处理抓取代理
+
+```python
+from getpage import get_page
+from pyquery import PyQuery as pq
+
+
+# 道生一：创建抽取代理的metaclass
+class ProxyMetaclass(type):
+    """
+        元类，在FreeProxyGetter类中加入
+        __CrawlFunc__和__CrawlFuncCount__
+        两个参数，分别表示爬虫函数，和爬虫函数的数量。
+    """
+    def __new__(cls, name, bases, attrs):
+        count = 0
+        attrs['__CrawlFunc__'] = []
+        attrs['__CrawlName__'] = []
+        for k, v in attrs.items():
+            if 'crawl_' in k:
+                attrs['__CrawlName__'].append(k)
+                attrs['__CrawlFunc__'].append(v)
+                count += 1
+        for k in attrs['__CrawlName__']:
+            attrs.pop(k)
+        attrs['__CrawlFuncCount__'] = count
+        return type.__new__(cls, name, bases, attrs)
+
+
+# 一生二：创建代理获取类
+
+class ProxyGetter(object, metaclass=ProxyMetaclass):
+    def get_raw_proxies(self, site):
+        proxies = []
+        print('Site', site)
+        for func in self.__CrawlFunc__:
+            if func.__name__==site:
+                this_page_proxies = func(self)
+                for proxy in this_page_proxies:
+                    print('Getting', proxy, 'from', site)
+                    proxies.append(proxy)
+        return proxies
+
+
+    def crawl_daili66(self, page_count=4):
+        start_url = 'http://www.66ip.cn/{}.html'
+        urls = [start_url.format(page) for page in range(1, page_count + 1)]
+        for url in urls:
+            print('Crawling', url)
+            html = get_page(url)
+            if html:
+                doc = pq(html)
+                trs = doc('.containerbox table tr:gt(0)').items()
+                for tr in trs:
+                    ip = tr.find('td:nth-child(1)').text()
+                    port = tr.find('td:nth-child(2)').text()
+                    yield ':'.join([ip, port])
+
+    def crawl_proxy360(self):
+        start_url = 'http://www.proxy360.cn/Region/China'
+        print('Crawling', start_url)
+        html = get_page(start_url)
+        if html:
+            doc = pq(html)
+            lines = doc('div[name="list_proxy_ip"]').items()
+            for line in lines:
+                ip = line.find('.tbBottomLine:nth-child(1)').text()
+                port = line.find('.tbBottomLine:nth-child(2)').text()
+                yield ':'.join([ip, port])
+
+    def crawl_goubanjia(self):
+        start_url = 'http://www.goubanjia.com/free/gngn/index.shtml'
+        html = get_page(start_url)
+        if html:
+            doc = pq(html)
+            tds = doc('td.ip').items()
+            for td in tds:
+                td.find('p').remove()
+                yield td.text().replace(' ', '')
+
+
+if __name__ == '__main__':
+    # 二生三：实例化ProxyGetter
+    crawler = ProxyGetter()
+    print(crawler.__CrawlName__)
+    # 三生万物
+    for site_label in range(crawler.__CrawlFuncCount__):
+        site = crawler.__CrawlName__[site_label]
+        myProxies = crawler.get_raw_proxies(site)
+```
+
+道生一：元类的__new__中，做了四件事：
+
+将“crawl_”开头的类方法的名称推入ProxyGetter.__CrawlName__
+将“crawl_”开头的类方法的本身推入ProxyGetter.__CrawlFunc__
+计算符合“crawl_”开头的类方法个数
+删除所有符合“crawl_”开头的类方法
+
+怎么样？是不是和之前创建ORM的__mappings__过程极为相似？
+
+一生二：类里面定义了使用pyquery抓取页面元素的方法
+
+分别从三个免费代理网站抓取了页面上显示的全部代理。
+
+如果对yield用法不熟悉，可以查看：[廖雪峰的python教程：生成器](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/0014317799226173f45ce40636141b6abc8424e12b5fb27000)
+
+二生三：创建实例对象crawler
+
+略
+
+三生万物：遍历每一个__CrawlFunc__
+
+在ProxyGetter.__CrawlName__上面，获取可以抓取的的网址名。
+触发类方法ProxyGetter.get_raw_proxies(site)
+遍历ProxyGetter.__CrawlFunc__,如果方法名和网址名称相同的，则执行这一个方法
+把每个网址获取到的代理整合成数组输出。
+
+年轻的造物主，创造世界的工具已经在你手上，请你将它的威力发挥到极致！
+
+请记住挥动工具的口诀：
+
+道生一，一生二，二生三，三生万物
+我是谁，我来自哪里，我要到哪里去
+
+---
