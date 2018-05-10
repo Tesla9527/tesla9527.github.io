@@ -269,7 +269,7 @@ L2.add(1)
 准备工作，创建一个Field类
 
 ```python
-lass Field(object):
+class Field(object):
 
     def __init__(self, name, column_type):
         self.name = name
