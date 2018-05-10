@@ -606,25 +606,36 @@ if __name__ == '__main__':
 
 ```python
 # python标准数据类型
-print(type(1)) # int类型
-print(type(3.14)) # float类型
-print(type(True)) # bool类型
-print(type(1j)) # complex类型
-print(type('I love you...')) # str类型
-print(type([1,1,2,3,5])) # list类型
-print(type((1,2,3))) # tuple类型
-print(type({1,2,3})) # set类型
-print(type({'name': 'Tesla', 'age': 28})) # dict类型
+print(type(1))  # int类型
+print(type(3.14))  # float类型
+print(type(True))  # bool类型
+print(type(1j))  # complex类型
+print(type('I love you...'))  # str类型
+print(type([1, 1, 2, 3, 5]))  # list类型
+print(type((1, 2, 3)))  # tuple类型
+print(type({1, 2, 3}))  # set类型
+print(type({'name': 'Tesla', 'age': 28}))  # dict类型
 print('---------------')
 # 定义一个类对象
 class Robot():
-	pass
-print('类对象内存地址：' + str(id(Robot))) # id()函数用于获取对象的内存地址。
-print(type(Robot)) # 打印类对象的类型
+    pass
+print('类对象内存地址：' + str(id(Robot)))
+print(type(Robot))  # 打印类对象的类型
 # 生成一个实例对象
 robot_timi = Robot()
 print('实例对象内存地址：' + str(id(robot_timi)))
-print(type(robot_timi)) # 打印实例对象的类型
+print(type(robot_timi))  # 打印实例对象的类型
+# 定义一个元类
+class SayMetaClass(type):
+
+    def __new__(cls, name, bases, attrs):
+        attrs[
+            'say_' + name] = lambda self, value, saying=name: print(saying + ',' + value + '!')
+        return type.__new__(cls, name, bases, attrs)
+print(id(SayMetaClass)) # 打印自定义元类地址
+print(id(int)) # 打印int类地址
+print(id(bool)) # 打印bool类地址
+print(id(type)) # 打印元类的地址（type is actually its own metaclass.）
 ```
 
 输出：
@@ -639,8 +650,27 @@ print(type(robot_timi)) # 打印实例对象的类型
 <class 'set'>
 <class 'dict'>
 ---------------
-类对象内存地址：92967904
+类对象内存地址：91853792
 <class 'type'>
-实例对象内存地址：88294128
+实例对象内存地址：91439856
 <class '__main__.Robot'>
+91854264
+1707859304
+1707806184
+1707878328
 ```
+以上输出中，我们将类对象和实例对象在内存中的地址都打出来了，这也说明了类和实例都是对象。不仅如此，元类在内存中的地址也打印出来了，而元类都是通过type生成的，type是自身的元类。
+
+我们再来看看wiki上对于计算机科学中对象的定义：
+
+[https://en.wikipedia.org/wiki/Object_(computer_science)](https://en.wikipedia.org/wiki/Object_(computer_science))
+
+In computer science, an object can be a variable, a data structure, a function, or a method, and as such, is a location in memory having a value and referenced by an identifier.
+
+朋友帮忙找到了另外一篇关于python中一切皆对象的文章：
+
+[https://mail.python.org/pipermail/python-list/2015-June/691689.html](https://mail.python.org/pipermail/python-list/2015-June/691689.html)
+
+### 结论
+
+好吧，我认可了，python里面一切皆对象...
