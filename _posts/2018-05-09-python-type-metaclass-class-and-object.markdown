@@ -34,11 +34,12 @@ python里有一句话叫做一切皆对象。
 我是谁？我从哪来里？我要到哪里去？
 在python世界，拥有一个永恒的道，那就是“type”，请记在脑海中，type就是道。如此广袤无垠的python生态圈，都是由type产生出来的。
 道生一，一生二，二生三，三生万物。
-道 即是 type
-一 即是 metaclass(元类，或者叫类生成器)
-二 即是 class(类，或者叫实例生成器)
-三 即是 instance(实例)
-万物 即是 实例的各种属性与方法，我们平常使用python时，调用的就是它们。
+
+* 道 即是 type
+* 一 即是 metaclass(元类，或者叫类生成器)
+* 二 即是 class(类，或者叫实例生成器)
+* 三 即是 instance(实例)
+* 万物 即是 实例的各种属性与方法，我们平常使用python时，调用的就是它们
 
 道和一，是我们今天讨论的命题，而二、三、和万物，则是我们常常使用的类、实例、属性和方法，用hello world来举例：
 
@@ -47,7 +48,6 @@ python里有一句话叫做一切皆对象。
 class Hello():
     def say_hello(self, name='world'):
         print('Hello, %s.' % name)
-
 
 # 从Hello类创建一个实例hello ----二生三
 hello = Hello()
