@@ -86,20 +86,8 @@ friends: [
         href: "http://www.yinwang.org/"
     },
     {
-      title: "崔庆才的博客",
-        href: "https://cuiqingcai.com/"
-    },
-    {
       title: "张啸的博客",
         href: "http://xiaoleon.cn/about/"
-    },
-    {
-      title: "debugtalk",
-        href: "http://debugtalk.com/"
-    },
-    {
-      title: "interactivepython",
-        href: "http://interactivepython.org"
     },
     {
       title: "王焱的博客",
@@ -108,10 +96,6 @@ friends: [
     {
       title: "leetcode",
         href: "https://leetcode.com/"
-    },
-    {
-      title: "diveintopython3",
-        href: "http://www.diveintopython3.net/"
     },
     {
       title: "python3-cookbook",
