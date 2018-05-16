@@ -114,3 +114,6 @@ test_sample.py:11: AssertionError</stack-trace>
 
 假设生成的report的目录为D:\Tesla\MyTest\report，在命令行中执行allure serve D:\Tesla\MyTest\report，漂亮的HTML报告就出来啦。
 ![img](/img/in-post/pytest-allure/allure_report.png)
+
+## 集成CI
+Allure报告可以很好的和CI集成，包括Jenkins，TeamCity等等。详细过程参考官网说明就可以了。[https://docs.qameta.io/allure](https://docs.qameta.io/allure)
