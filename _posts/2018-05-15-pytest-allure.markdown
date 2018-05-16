@@ -5,7 +5,7 @@ subtitle:   ""
 date:       2018-05-15
 author:     "Tesla9527"
 header-img: "img/post-bg-alitrip.jpg"
-catalog:    false
+catalog:    true
 tags:
     - Python
 ---
@@ -107,7 +107,7 @@ test_sample.py:11: AssertionError</stack-trace>
 ```
 
 ## 查看Allure报告
-在本地查看Allure报告时，需要安装一些allure的命令工具，安装步骤如下：
+在本地查看Allure报告时，需要安装一下allure的命令工具，安装步骤如下：
 
 * 安装[scoop](http://scoop.sh/)
 * 在命令行中执行scoop install allure来安装allure
