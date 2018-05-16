@@ -16,16 +16,17 @@ pytest：[https://docs.pytest.org/en/latest/contents.html#](https://docs.pytest.
 allure: [http://allure.qatools.ru/](http://allure.qatools.ru/)
 
 试用过程：
-1. 编写测试脚本
+## 编写测试脚本
 
 脚本目录结构如下：
 ```
 - MyTest
-	-test_demo.py
-	-test_sample.py
+  -test_demo.py
+  -test_sample.py
 ```
 
 test_demo.py文件：
+
 ```python
 import pytest
 
@@ -40,6 +41,7 @@ class TestDemo(object):
 ```
 
 test_sample.py文件：
+
 ```python
 import pytest
 
@@ -53,13 +55,14 @@ class TestSample(object):
         assert 'OK' in 'are you ok?'
 ```
 
-2. 安装Allure
+## 安装Allure
 ```
 pip install pytest-allure-adaptor
 ```
 
-3. 执行测试
+## 执行测试
 命令行切换到MyTest目录下，执行命令py.test --alluredir report，是不是很方便，不用另外写一个runner文件来收集测试案例。执行完毕之后会在MyTest目录下新增report目录，并生成测试结果的xml文件，生成的xml文件示例：
+
 ```xml
 <ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1526451488091" stop="1526451488112">
   <name>test_sample</name>
@@ -103,7 +106,7 @@ test_sample.py:11: AssertionError</stack-trace>
 </ns0:test-suite>
 ```
 
-4. 查看Allure报告
+## 查看Allure报告
 在本地查看Allure报告时，需要安装一些allure的命令工具，安装步骤如下：
 
 * 安装[scoop](http://scoop.sh/)
@@ -111,4 +114,3 @@ test_sample.py:11: AssertionError</stack-trace>
 
 假设生成的report的目录为D:\Tesla\MyTest\report，在命令行中执行allure serve D:\Tesla\MyTest\report，漂亮的HTML报告就出来啦。
 ![img](/img/in-post/pytest-allure/allure_report.png)
-
