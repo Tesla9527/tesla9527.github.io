@@ -15,7 +15,8 @@ pytest：[https://docs.pytest.org/en/latest/contents.html#](https://docs.pytest.
 
 allure: [http://allure.qatools.ru/](http://allure.qatools.ru/)
 
-试用过程：
+---
+
 ## 编写测试脚本
 
 脚本目录结构如下：
@@ -56,6 +57,7 @@ class TestSample(object):
 ```
 
 ## 安装Allure
+
 ```
 pip install pytest-allure-adaptor
 ```
