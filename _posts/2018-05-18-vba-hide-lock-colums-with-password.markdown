@@ -9,10 +9,10 @@ catalog:    false
 tags:
     - VBA
 ---
-haha
----
 
-```vba
+>最近朋友有一个批量处理大量excel的需求，需要将每个excel中的每个sheet里面的指定列隐藏，指定列锁定，还要加密。加起来总共有1万多张sheet，如果一张张sheet的人工操作，那真是得无聊死了。于是我帮忙找了一下办法。在网上找了各种例子，然后拼接起来，完美完成任务。
+
+```vbscript
 Sub LoopAllExcelFilesInFolder()
 'PURPOSE: To loop through all Excel files in a user specified folder and perform a set task on them
 'SOURCE: www.TheSpreadsheetGuru.com
