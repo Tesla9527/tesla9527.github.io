@@ -63,6 +63,7 @@ NextCode:
         sht.Columns("H:K").Hidden = True
         sht.Range("B:C").Locked = False
         sht.Protect "1234"
+        sht.Protect AllowInsertingRows:=True
     Next
     'Save and Close Workbook
       wb.Close SaveChanges:=True
