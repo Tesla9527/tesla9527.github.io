@@ -29,6 +29,9 @@ Inspired by [awesome-python](https://github.com/vinta/awesome-python).
 * Performance Testing
     * [JMeter](http://jmeter.apache.org/)
     * [Locust](http://locust.io/)
+
+* Server Monitor
+    * [netdata](https://github.com/firehol/netdata) - Linux服务器监控工具
 		
 * Continuous Integration
     * [Jenkins](https://jenkins.io/)
