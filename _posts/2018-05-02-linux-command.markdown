@@ -21,3 +21,8 @@ lsb_release -a
 ##### 切换用户
 
 su username
+
+##### 清空文件
+
+truncate -s 0 myfile.txt
+s or –size: specifies the size to which the file needs to be truncated, in bytes
