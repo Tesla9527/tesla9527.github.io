@@ -56,3 +56,58 @@ PS D:\Tesla\Pandas> python .\mytest.py
 
 Excel输出结果示例：
 ![img](/img/in-post/pandas/pandas_result.png)
+
+决策模拟脚本示例：
+```python
+import pandas as pd
+from pandasql import *
+
+pysqldf = lambda q: sqldf(q, globals())
+
+user = pd.read_excel("input.xlsx")
+
+decision_result = []
+for index, row in user.iterrows():
+	# 事件一决策
+	if row['AGE'] < 20 or row['AGE'] > 50:
+		event_one = 'N'
+		event_one_des = '客户年龄小于20或者大于50,被拒;'
+	else:
+		event_one = 'Y'
+		event_one_des = '事件一通过'
+	# 事件二决策
+	if event_one == 'Y':
+		if row['LIMIT'] < 1000 or row['LIMIT'] > 50000:
+			event_two = 'N'
+			event_two_des = '额度在1000-50000之外,被拒;'
+		else:
+			event_two = 'Y'
+			event_two_des = '事件二通过'
+	else:
+		event_two = '未进入事件二'
+		event_two_des = '未进入事件二'
+	print(event_one,event_one_des,event_two,event_two_des)
+	decision_result.append([event_one,event_one_des,event_two,event_two_des])
+df=pd.DataFrame(decision_result,columns=['event_one','event_one_des','event_two','event_two_des'])
+print('--------------------------')
+print(df)
+```
+
+决策脚本命令行输出示例：
+```
+PS D:\Tesla\Pandas> python .\decision.py
+Y 事件一通过 Y 事件二通过
+N 客户年龄小于20或者大于50,被拒; 未进入事件二 未进入事件二
+Y 事件一通过 Y 事件二通过
+Y 事件一通过 Y 事件二通过
+Y 事件一通过 Y 事件二通过
+Y 事件一通过 Y 事件二通过
+--------------------------
+  event_one       event_one_des event_two event_two_des
+0         Y               事件一通过         Y         事件二通过
+1         N  客户年龄小于20或者大于50,被拒;    未进入事件二        未进入事件二
+2         Y               事件一通过         Y         事件二通过
+3         Y               事件一通过         Y         事件二通过
+4         Y               事件一通过         Y         事件二通过
+5         Y               事件一通过         Y         事件二通过
+```
