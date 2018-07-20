@@ -4,7 +4,7 @@ title:      "flask + vuejs进行web开发练习"
 subtitle:   ""
 date:       2018-05-30
 author:     "Tesla9527"
-header-img: "img/post-bg-YaChu2.jpg"
+header-img: "img/post-bg-ArrowPeng.jpg"
 catalog:    false
 tags:
     - Flask
