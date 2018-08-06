@@ -10,7 +10,7 @@ tags:
     - Mysql
 ---
 
-```mysql
+```sql
 set @myVariable := "Test";
 update my_table set my_field = @myVariable
 ```
