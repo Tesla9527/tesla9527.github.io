@@ -12,7 +12,7 @@ tags:
 
 在研究使用flask-restplus写api的过程中，看到网友写的样例，配置文件是写在python文件中，然后直接导入的。记得之前老夫在用java写自动化框架的时候，配置文件是写在yml文件中的。在python里面是直接写在py文件中，真是方便啊。
 
-上个例子，我们写一个settings.py文件，里面写上我们需要的配置：
+举个例子，我们写一个settings.py文件，里面写上我们需要的配置：
 ```python
 # Flask settings
 FLASK_SERVER_NAME = 'localhost:8888'
