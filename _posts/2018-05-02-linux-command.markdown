@@ -31,7 +31,7 @@ s or –size: specifies the size to which the file needs to be truncated, in byt
 
 ##### 查看程序所在位置
 
-which <programname>
+which programname
 示例：
 ```
 [tesla9527@instance-1 ~]$ which ping
