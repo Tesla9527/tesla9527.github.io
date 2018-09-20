@@ -22,6 +22,22 @@ lsb_release -a
 
 su username
 
+##### 列出目录下文件大小的详细信息
+
+[tesla9527@instance-1 home]$ ll --help
+Usage: ls [OPTION]... [FILE]...
+List information about the FILEs (the current directory by default).
+Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+
+-h, --human-readable  with -l, print sizes in human readable format(e.g., 1K 234M 2G)
+
+示例：
+```
+[tesla9527@instance-1 home]$ ll -h
+total 12M
+-rw-r--r--. 1 root      root      12M Sep  7 02:05 opensslrpm.tgz
+```
+
 ##### 清空文件
 
 truncate -s 0 myfile.txt
