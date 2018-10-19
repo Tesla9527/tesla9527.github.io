@@ -72,3 +72,53 @@ Installing dependencies from Pipfile.lock (444a6d)...
 To activate this project's virtualenv, run pipenv shell.
 Alternatively, run a command inside the virtualenv with pipenv run.
 ```
+
+安装成功后我们在当前项目目录下新建一个main.py文件，内容如下:
+```python
+import requests
+
+
+response = requests.get('https://httpbin.org/ip')
+print(f"Your IP is { response.json()['origin'] }")
+```
+
+使用pipenv run执行的效果如下:
+```
+PS D:\myproject> pipenv run python main.py
+Your IP is 122.97.178.162
+```
+
+使用pipenv shell切换到虚拟环境下的shell然后执行python脚本的效果如下:
+```
+PS D:\myproject> pipenv shell
+Launching subshell in virtual environment…
+Windows PowerShell
+版权所有 (C) Microsoft Corporation。保留所有权利。
+
+PS D:\myproject> python .\main.py
+Your IP is 122.97.178.162
+```
+
+虚拟环境下查看python的可执行文件和退出虚拟环境后查看python的可执行文件
+```
+PS D:\myproject> pipenv shell
+Launching subshell in virtual environment…
+Windows PowerShell
+版权所有 (C) Microsoft Corporation。保留所有权利。
+
+
+PS D:\myproject> python
+Python 3.7.0 (v3.7.0:1bf9cc5093, Jun 27 2018, 04:06:47) [MSC v.1914 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import sys
+>>> print(sys.executable)
+D:\python_virtual_env\myproject-1qCvww8S\Scripts\python.exe
+>>> exit()
+PS D:\myproject> exit
+PS D:\myproject> python
+Python 3.7.0 (v3.7.0:1bf9cc5093, Jun 27 2018, 04:06:47) [MSC v.1914 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import sys
+>>> print(sys.executable)
+C:\Users\Tesla Lau\AppData\Local\Programs\Python\Python37-32\python.exe
+```
