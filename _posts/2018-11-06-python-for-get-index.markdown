@@ -13,7 +13,7 @@ tags:
 ```python
 a = ['卓依婷', '伍佰', '张宇']
 for i in a:
-	print(i)
+    print(i)
 ```
 输出：
 ```
@@ -27,7 +27,7 @@ for i in a:
 ```python
 a = ['卓依婷', '伍佰', '张宇']
 for index, i in enumerate(a):
-	print(f'{index} - {i}')
+    print(f'{index} - {i}')
 ```
 输出：
 ```
