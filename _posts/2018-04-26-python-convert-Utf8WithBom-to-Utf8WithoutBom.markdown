@@ -4,7 +4,7 @@ title:      "python将目录下的所有文件转换成UTF-8 without BOM编码�
 subtitle:   ""
 date:       2018-04-26
 author:     "Tesla9527"
-header-img: "img/post-bg-alitrip.jpg"
+header-img: "img/home-bg-o.jpg"
 catalog:    false
 tags:
     - Python

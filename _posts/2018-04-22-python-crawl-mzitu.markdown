@@ -4,7 +4,7 @@ title:      "使用python爬取妹子图"
 subtitle:   ""
 date:       2018-04-22
 author:     "Tesla9527"
-header-img: "img/post-bg-alitrip.jpg"
+header-img: "img/home-bg-o.jpg"
 catalog:    false
 tags:
     - Python

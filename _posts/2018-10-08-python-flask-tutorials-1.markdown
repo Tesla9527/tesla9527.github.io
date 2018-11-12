@@ -4,7 +4,7 @@ title:      "Python Flask Tutorials 1 - Getting Started"
 subtitle:   ""
 date:       2018-10-08
 author:     "Tesla9527"
-header-img: "img/post-bg-alitrip.jpg"
+header-img: "img/home-bg-o.jpg"
 catalog:    false
 tags:
     - Python

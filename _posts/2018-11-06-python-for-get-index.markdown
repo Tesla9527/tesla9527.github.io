@@ -4,7 +4,7 @@ title:      "python获取for循环的下标"
 subtitle:   ""
 date:       2018-11-06
 author:     "Tesla9527"
-header-img: "img/post-bg-alitrip.jpg"
+header-img: "img/home-bg-o.jpg"
 catalog:    false
 tags:
     - Python

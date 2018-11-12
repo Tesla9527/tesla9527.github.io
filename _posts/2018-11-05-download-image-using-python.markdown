@@ -4,7 +4,7 @@ title:      "使用python下载网络图片"
 subtitle:   ""
 date:       2018-11-05
 author:     "Tesla9527"
-header-img: "img/post-bg-alitrip.jpg"
+header-img: "img/home-bg-o.jpg"
 catalog:    true
 tags:
     - Python

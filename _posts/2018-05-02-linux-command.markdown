@@ -4,7 +4,7 @@ title:      "Linux命令汇总"
 subtitle:   ""
 date:       2018-05-02
 author:     "Tesla9527"
-header-img: "img/post-bg-alitrip.jpg"
+header-img: "img/home-bg-o.jpg"
 catalog:    false
 tags:
     - Linux

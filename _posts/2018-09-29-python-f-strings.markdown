@@ -4,7 +4,7 @@ title:      "使用f-strings格式化字符串"
 subtitle:   ""
 date:       2018-09-29
 author:     "Tesla9527"
-header-img: "img/post-bg-alitrip.jpg"
+header-img: "img/home-bg-o.jpg"
 catalog:    false
 tags:
     - Python

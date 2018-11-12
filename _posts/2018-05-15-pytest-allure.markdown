@@ -4,7 +4,7 @@ title:      "使用pytest和allure做单元测试"
 subtitle:   ""
 date:       2018-05-15
 author:     "Tesla9527"
-header-img: "img/post-bg-alitrip.jpg"
+header-img: "img/home-bg-o.jpg"
 catalog:    true
 tags:
     - Python

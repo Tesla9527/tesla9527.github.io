@@ -4,7 +4,7 @@ title:      "python世界中的type，元类，类与对象"
 subtitle:   ""
 date:       2018-05-09
 author:     "Tesla9527"
-header-img: "img/post-bg-alitrip.jpg"
+header-img: "img/home-bg-o.jpg"
 catalog:    true
 tags:
     - Python

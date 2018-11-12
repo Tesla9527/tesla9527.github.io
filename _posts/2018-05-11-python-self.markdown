@@ -4,7 +4,7 @@ title:      "如何理解python中的self"
 subtitle:   ""
 date:       2018-05-11
 author:     "Tesla9527"
-header-img: "img/post-bg-alitrip.jpg"
+header-img: "img/home-bg-o.jpg"
 catalog:    false
 tags:
     - Python

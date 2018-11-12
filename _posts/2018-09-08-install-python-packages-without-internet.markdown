@@ -4,7 +4,7 @@ title:      "断网环境使用pip安装python模块"
 subtitle:   ""
 date:       2018-09-08
 author:     "Tesla9527"
-header-img: "img/post-bg-alitrip.jpg"
+header-img: "img/home-bg-o.jpg"
 catalog:    false
 tags:
     - Python

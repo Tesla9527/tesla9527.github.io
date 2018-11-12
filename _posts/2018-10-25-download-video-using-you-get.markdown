@@ -4,7 +4,7 @@ title:      "使用you-get模块下载爱奇艺视频"
 subtitle:   ""
 date:       2018-10-25
 author:     "Tesla9527"
-header-img: "img/post-bg-alitrip.jpg"
+header-img: "img/home-bg-o.jpg"
 catalog:    true
 tags:
     - Python

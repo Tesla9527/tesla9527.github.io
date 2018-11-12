@@ -4,7 +4,7 @@ title:      "使用win10锁屏图片当桌面背景"
 subtitle:   ""
 date:       2018-05-11
 author:     "Tesla9527"
-header-img: "img/post-bg-alitrip.jpg"
+header-img: "img/home-bg-o.jpg"
 catalog:    false
 tags:
     - Python

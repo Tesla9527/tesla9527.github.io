@@ -4,7 +4,7 @@ title:      "让python忽略字符串中的转义字符"
 subtitle:   ""
 date:       2018-08-01
 author:     "Tesla9527"
-header-img: "img/post-bg-alitrip.jpg"
+header-img: "img/home-bg-o.jpg"
 catalog:    false
 tags:
     - Python    

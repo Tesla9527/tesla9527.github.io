@@ -4,7 +4,7 @@ title:      "python的缩进问题"
 subtitle:   ""
 date:       2018-08-02
 author:     "Tesla9527"
-header-img: "img/post-bg-alitrip.jpg"
+header-img: "img/home-bg-o.jpg"
 catalog:    false
 tags:
     - Python    

@@ -4,7 +4,7 @@ title:      "pip show information about one or more installed packages"
 subtitle:   ""
 date:       2018-10-12
 author:     "Tesla9527"
-header-img: "img/post-bg-alitrip.jpg"
+header-img: "img/home-bg-o.jpg"
 catalog:    false
 tags:
     - Python
