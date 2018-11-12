@@ -1,0 +1,17 @@
+---
+layout:     post
+title:      "小众群体的Private Tracker站以及如何做种"
+subtitle:   ""
+date:       2018-11-12
+author:     "Tesla9527"
+header-img: "img/home-bg-o.jpg"
+catalog:    false
+tags:
+    - Python
+---
+>自己使用PT站下载电影也快3年多了，一直都是在电脑上进行下载和做种。最近购买了NAS，想着之前在电脑上下载好的电影还蛮多的，为了做种，不可能重新再下载一遍。在youtube里面找到了不用重新下载继续做种的方法，蛮简单的。
+
+YouTube视频链接：
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GHKRpt08-qQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+PS：在视频19:50的时候有介绍到如何做种。
