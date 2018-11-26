@@ -4,7 +4,7 @@ title:      "使用Tornado起一个静态文件服务"
 subtitle:   ""
 date:       2018-11-22
 author:     "Tesla9527"
-header-img: "img/vancleefarpels1.jpg"
+header-img: "img/vancleefarpels.jpg"
 catalog:    false
 tags:
     - Python

@@ -4,7 +4,7 @@ title:      "小众群体的Private Tracker站以及如何做种"
 subtitle:   ""
 date:       2018-11-12
 author:     "Tesla9527"
-header-img: "img/vancleefarpels2.jpg"
+header-img: "img/home-bg-o.jpg"
 catalog:    false
 tags:
     - Python
