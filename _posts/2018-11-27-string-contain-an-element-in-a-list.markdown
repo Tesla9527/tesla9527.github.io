@@ -17,15 +17,17 @@ a = '我爱卓依婷'
 list_b = ['爱', 'Timi']
 list_c = ['不爱']
 list_d = ['婷']
-list_e = ['婷']
+list_e = ['依婷']
 print(containsAny(a, list_b))
 print(containsAny(a, list_c))
 print(containsAny(a, list_d))
+print(containsAny(a, list_e))
 ```
 
 输出：
 ```
 True
 False
+True
 True
 ```
