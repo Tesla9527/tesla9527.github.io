@@ -19,7 +19,7 @@ tags:
 from bs4 import BeautifulSoup as soup
 
 
-html = '''
+html = r'''
 <tr class="admin-bookings-table-row bookings-history-row  paid   ">张学友张学友我们爱你!</tr>
 <tr class="admin-bookings-table-row  nope  paid   ">我爱黎明我爱黎明!</tr>
 <h1 class="admin-bookings-table-row  nope  paid   ">我爱卓依婷!</h1>
