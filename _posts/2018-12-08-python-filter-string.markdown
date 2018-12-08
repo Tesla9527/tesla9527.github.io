@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "python判断字符串是否包含list中的元素"
+title:      "python过滤字符串"
 subtitle:   ""
 date:       2018-12-08
 author:     "Tesla9527"
