@@ -10,7 +10,7 @@ tags:
     - Python
     - BeautifulSoup
 ---
-爬虫中很重要的一点就是对爬下来的内容进行提取。我的标题其实应该是取的有问题的，我在搜索这个问题的时候，看到stackoverflow上有回答说HTML class can't contain spaces. This element has multiple classes. Searching by either of these classes works。但是我不想使用这个答案中所有的使用其中任意一个class进行搜索的方式，因为我觉得很有可能其他地方也存在这个名字的class，会导致我在定位标签的时候不准确，可能定位到其他标签上了。所以我还是喜欢该问题中的另一个回答。
+爬虫中很重要的一点就是对爬下来的内容进行提取。我的标题其实应该是取的有问题的，我在搜索这个问题的时候，看到stackoverflow上有回答说HTML class can't contain spaces. This element has multiple classes. Searching by either of these classes works。但是为了方便理解，我就取这个名字了。而且我不想使用这个答案中所说的使用其中任意一个class进行搜索的方式，因为我觉得很有可能其他地方也存在这个名字的class，会导致我在定位标签的时候不准确，可能定位到其他标签上了。所以我还是喜欢该问题中的另一个回答。
 
 原链接：[https://stackoverflow.com/questions/46718366/beautifulsoup-and-class-with-spaces](https://stackoverflow.com/questions/46718366/beautifulsoup-and-class-with-spaces)
 
