@@ -30,7 +30,11 @@ pyinstaller yourprogram.py
 
 ![img](/img/in-post/pyinstaller/image_serve.png)
 
-3.在命令行中切换到nssm所在的目录，执行nssm.exe install servicename
+3.在命令行中切换到nssm所在的目录，执行以下命令
+
+```
+nssm.exe install servicename
+```
 
 4.在弹出的GUI中填上我们做好的exe文件的位置，如果有参数，在参数栏中填入参数，点击确定，完成windows服务的安装
 
