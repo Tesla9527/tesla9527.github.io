@@ -43,19 +43,25 @@ from requests_html import HTML
 
 
 doc = '''
+<a href='https://tesla9527.github.io/'>
+<a href='https://www.google.com/'>
 <tr class="admin-bookings-table-row bookings-history-row  paid   ">张学友张学友我们爱你!</tr>
 <tr class="admin-bookings-table-row  nope  paid   ">我爱黎明我爱黎明!</tr>
 <h1 class="admin-bookings-table-row  nope  paid   ">我爱卓依婷!</h1>
 '''
 r = HTML(html=doc)
-a = r.find('tr.admin-bookings-table-row.bookings-history-row.paid')[0]
+a = r.find('tr.admin-bookings-table-row.bookings-history-row.paid')[0] # css选择器提取
 b = r.find('tr.admin-bookings-table-row.nope.paid')[0]
 c = r.find('h1.admin-bookings-table-row.nope.paid')[0]
-print(a.text, b.text, c.text)
+print(a.text, b.text, c.text) 
+print(r.links) # 打印所有链接
+print(r.search('https://{}.github.io/')[0]) # 搜索内容
 ```
 
 输出：
 ```
 张学友张学友我们爱你! 我爱黎明我爱黎明! 我爱卓依婷!
-[Finished in 1.7s]
+{'https://tesla9527.github.io/', 'https://www.google.com/'}
+tesla9527
+[Finished in 7.9s]
 ```
