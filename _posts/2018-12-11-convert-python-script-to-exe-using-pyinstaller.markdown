@@ -16,21 +16,22 @@ tags:
 Pyinstaller官网地址：
 [https://www.pyinstaller.org/index.html](https://www.pyinstaller.org/index.html)
 
-1. 安装pyinstaller
+1.安装pyinstaller
+
 ```
 pip install pyinstaller
 ```
 
-2. 在命令行中切换到python脚本所在的目录，执行以下命令，完成后我们的exe文件就做好啦
-输出：
+2.在命令行中切换到python脚本所在的目录，执行以下命令，完成后我们的exe文件就做好啦
+
 ```
 pyinstaller yourprogram.py
 ```
 
 ![img](/img/in-post/pyinstaller/image_serve.png)
 
-3. 在命令行中切换到nssm所在的目录，执行nssm.exe install servicename
+3.在命令行中切换到nssm所在的目录，执行nssm.exe install servicename
 
-4. 在弹出的GUI中填上我们做好的exe文件的位置，如果有参数，在参数栏中填入参数，点击确定，完成windows服务的安装
+4.在弹出的GUI中填上我们做好的exe文件的位置，如果有参数，在参数栏中填入参数，点击确定，完成windows服务的安装
 
 ![img](/img/in-post/pyinstaller/image_serve_service.png)
