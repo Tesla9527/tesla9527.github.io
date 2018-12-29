@@ -5,13 +5,14 @@ subtitle:   ""
 date:       2018-11-05
 author:     "Tesla9527"
 header-img: "img/home-bg-o.jpg"
-catalog:    true
+catalog:    false
 tags:
     - Python
+    - 爬虫
 ---
 >在帮朋友写爬虫去爬取数据时，遇到下载网络图片的问题。按照之前爬取小姐姐图片的方法，总会有某些图片下载下来后显示无效图片，后来在网上找到了另外一个方法，所有图片都能顺利地下载下来了。在此记录一下，之后遇到下载图片的需求时，就按照后面的方法来。
 
-## 下载后显示无效图片的方法
+下载后显示无效图片的方法
 
 ```python
 from requests_html import HTMLSession
@@ -26,7 +27,7 @@ f.write(img_r.content)
 f.close()
 ```
 
-## 下载成功的方法
+下载成功的方法
 
 ```python
 import requests

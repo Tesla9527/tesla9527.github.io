@@ -8,6 +8,7 @@ header-img: "img/home-bg-o.jpg"
 catalog:    false
 tags:
     - Python
+    - 爬虫
 ---
 不采用gevent时：
 
