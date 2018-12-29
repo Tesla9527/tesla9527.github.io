@@ -15,13 +15,13 @@ tags:
 [https://stackoverflow.com/questions/8270092/remove-all-whitespace-in-a-string-in-python](https://stackoverflow.com/questions/8270092/remove-all-whitespace-in-a-string-in-python)
 
 ```python
-a = r'   卓依婷	张宇			 伍佰'
-b = " ".join(a.split())
+a = '   我       	爱			 卓依婷'
+b = "".join(a.split())
 print(b)
 ```
 
 结果：
 ```
-卓依婷 张宇 伍佰
-[Finished in 0.5s]
+我爱卓依婷
+[Finished in 0.4s]
 ```
