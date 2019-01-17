@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "将字符串中的空格替换"
+title:      "leetcode - 有效的括号"
 subtitle:   ""
 date:       2019-01-17
 author:     "Tesla9527"
