@@ -134,6 +134,7 @@ frps Dashboard: http://12.12.12.12:6443/   #  这个是frp控制台访问地址
 七、更多帮助请移步官方帮助文件
 https://github.com/fatedier/frp/blob/master/README_zh.md
 
+---
 
 ```
 ##########################群晖安装FRPC教程：方法一############################
