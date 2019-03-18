@@ -135,8 +135,8 @@ frps Dashboard: http://12.12.12.12:6443/   #  这个是frp控制台访问地址
 https://github.com/fatedier/frp/blob/master/README_zh.md
 
 
-
-##################################群晖安装FRPC教程：方法一############################
+```
+##########################群晖安装FRPC教程：方法一############################
 1.
 开启群晖SSH功能。
 2.
@@ -166,17 +166,19 @@ nohup ./frpc -c ./frpc.ini & #后台保持启动
 
 计划命令
 /frp/frp_0.20.0_linux_amd64/frpc -c /frp/frp_0.20.0_linux_amd64/frpc.ini
+```
 
-
-################################群晖安装FRPC教程：方法二############################
+```
+##############################群晖安装FRPC教程：方法二############################
 1.下载群晖玩家自制的FRPC套件。
 2.下载地址：https://u16883951.pipipan.com/dir/16883951-27851564-b29cac/
   https://www.synology.com/zh-cn/knowledgebase/DSM/tutorial/General/What_kind_of_CPU_does_my_NAS_have 套件架构查询地址
 3.选择FRPC最新版本下载。
 4.选择你群晖机型的apk下载安装。
 5.安装设置frpc.ini 后启动套件即可。
+```
 
-
+```
 ##############################群晖安装FRPC教程：方法三############################
 1.LEDE软路由安装frpc客服端
 2.设置运行即可
@@ -184,3 +186,30 @@ nohup ./frpc -c ./frpc.ini & #后台保持启动
 
 /sbin/iptables -I INPUT -p tcp --dport 7000 -j ACCEPT 
 # 如需开放端口 请按照实际使用情况 依次开放 此处仅以7000端口为例。
+```
+
+---
+
+frpc.ini的配置：
+链接：[frpc.ini配置](https://www.dropbox.com/sh/6y7vhnvnyy38taz/AAC8wKPdQUKNoNo9LC4dyAGHa?dl=0&preview=frpc.ini)
+我的实际配置如下，其中将nas下面的local_ip从实际ip改为了127.0.0.1。因为我nas连接的是一台中继路由，每次重启nas后可能会分配到不同的ip，而我又没有使用静态ip，如果填写实际ip的话，ip变了以后就连接不上了。后经过测试，改为127.0.0.1后就可以了。
+```
+[common]
+server_addr = xxx.xxx.xxx.xxx
+server_port = 5443
+token = xxxxxxx
+
+[nas]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 5000
+remote_port = 5000
+use_encryption = true
+use_compression = true
+
+[ssh]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 22
+remote_port = 6000
+```
