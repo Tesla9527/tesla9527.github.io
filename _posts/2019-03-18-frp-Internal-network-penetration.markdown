@@ -14,19 +14,23 @@ tags:
 链接：[教程](https://www.dropbox.com/sh/6y7vhnvnyy38taz/AABDGLxYly6OGuz2A2Ws-At4a/%E6%95%99%E7%A8%8B.yaml?dl=0)
 
 1.注意事项
+```
 使用国内服务器搭建，需要域名备案才能使用。
 推荐使用：谷歌云、vultr、搬瓦工。
 其次推荐：阿里云、腾讯云。
 #FRPCgithub地址：https://github.com/fatedier/frp
 #FRPCgithub版本地址：https://github.com/fatedier/frp/releases
+```
 
-可使用的Linux版本。建议Debian7或者Debian8/64bit.
+2.可使用的Linux版本,建议Debian7或者Debian8/64bit.
+```
 CentOS 6 32/64bit
 CentOS 7 32/64bit
 Debian 6 32/64bit
 Debian 7 32/64bit
 Debian 8 32/64bit
 Ubuntu 14 32/64bit
+```
 
 ```
 ################################一键搭建FRPC服务端教程#################################
