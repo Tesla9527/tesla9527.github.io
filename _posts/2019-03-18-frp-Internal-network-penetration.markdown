@@ -191,7 +191,9 @@ nohup ./frpc -c ./frpc.ini & #后台保持启动
 ---
 
 frpc.ini的配置：
+
 链接：[frpc.ini配置](https://www.dropbox.com/sh/6y7vhnvnyy38taz/AAC8wKPdQUKNoNo9LC4dyAGHa?dl=0&preview=frpc.ini)
+
 我的实际配置如下，其中将nas下面的local_ip从实际ip改为了127.0.0.1。因为我nas连接的是一台中继路由，每次重启nas后可能会分配到不同的ip，而我又没有使用静态ip，如果填写实际ip的话，ip变了以后就连接不上了。后经过测试，改为127.0.0.1后就可以了。
 ```
 [common]
