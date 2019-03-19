@@ -11,7 +11,12 @@ tags:
     - nas
 ---
 
-链接：[教程](https://www.dropbox.com/sh/6y7vhnvnyy38taz/AABDGLxYly6OGuz2A2Ws-At4a/%E6%95%99%E7%A8%8B.yaml?dl=0)
+## 安装frp服务端
+
+链接：[文字教程](https://www.dropbox.com/sh/6y7vhnvnyy38taz/AABDGLxYly6OGuz2A2Ws-At4a/%E6%95%99%E7%A8%8B.yaml?dl=0)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KTR4BW8Qvqs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 1.注意事项
 ```
@@ -140,6 +145,8 @@ https://github.com/fatedier/frp/blob/master/README_zh.md
 
 ---
 
+## 安装frp客户端
+
 ```
 ##########################群晖安装FRPC教程：方法一############################
 1.
@@ -222,7 +229,8 @@ remote_port = 6000
 ```
 
 ---
-设置frpc开机自动启动
+
+## 设置frpc开机自动启动
 
 直接修改rc.local文件，在末尾exit 0之前添加如下代码即可随NAS启动
 ```
