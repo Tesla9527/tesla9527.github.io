@@ -220,3 +220,15 @@ local_ip = 127.0.0.1
 local_port = 22
 remote_port = 6000
 ```
+
+---
+设置frpc开机自动启动
+
+直接修改rc.local文件，在末尾exit 0之前添加如下代码即可随NAS启动
+```
+sleep 30
+cd /frp#你安装frpc客户端的目录
+nohup ./frpc -c ./frpc.ini &
+```
+
+需要sleep应该是系统的某些网络服务还没有启动完成，例如dns服务，而frpc启动时会连接服务器，失败后直接退出。添加sleep可以确保在启动frpc前相关的服务已经启动完毕。
