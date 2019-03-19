@@ -5,7 +5,7 @@ subtitle:   ""
 date:       2019-03-18
 author:     "Tesla9527"
 header-img: "img/vancleefarpels.jpg"
-catalog:    false
+catalog:    true
 tags:
     - frp
     - nas
@@ -15,8 +15,7 @@ tags:
 
 链接：[文字教程](https://www.dropbox.com/sh/6y7vhnvnyy38taz/AABDGLxYly6OGuz2A2Ws-At4a/%E6%95%99%E7%A8%8B.yaml?dl=0)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KTR4BW8Qvqs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+[视频教程](https://www.youtube.com/watch?v=KTR4BW8Qvqs)
 
 1.注意事项
 ```
@@ -140,7 +139,7 @@ frps Dashboard: http://12.12.12.12:6443/   #  这个是frp控制台访问地址
 程序版本： /etc/init.d/frps version
 ```
 
-七、更多帮助请移步官方帮助文件
+六、更多帮助请移步官方帮助文件
 https://github.com/fatedier/frp/blob/master/README_zh.md
 
 ---
