@@ -21,3 +21,11 @@ mysql客户端我一直使用的heidisql，它的数据导出功能也很好用�
 ```
 
 ![img](/img/in-post/mysql/heidisql-export.png)
+
+数据通过这种模式导出后，如果想要将该数据导回到mysql，可以选择import csv file，该方式会自动将\N的值以NULL的形式导入数据库。导入向导中Control characters可以按照如下方式进行填写:
+```
+1. Fields terminated by选择,
+2. Fields enclosed by选择\t
+3. Fields escaped by选择空
+4. Lines terminated by选择\r\n
+```
