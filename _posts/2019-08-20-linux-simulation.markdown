@@ -10,7 +10,7 @@ tags:
     - Linux
 ---
 
-模拟CPU使用100%
+模拟CPU使用接近100%
 
 ```python
 def deadloop():
