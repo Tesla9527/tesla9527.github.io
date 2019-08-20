@@ -10,7 +10,7 @@ tags:
     - Linux
 ---
 
-模拟CPU使用接近100%
+模拟CPU使用接近100%，如果是多核CPU，将下面脚本同时运行多个就可以。
 
 ```python
 def deadloop():
