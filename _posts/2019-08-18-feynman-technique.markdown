@@ -10,7 +10,9 @@ tags:
     - 生活
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7iNJyEbYDdc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[https://www.youtube.com/embed/7iNJyEbYDdc](https://www.youtube.com/embed/7iNJyEbYDdc)
+
 
 大道至简。什么是学习？
 比如说：
@@ -37,8 +39,3 @@ tags:
 第一步：确定自己要获得的技能
 第二步：
 第三步：将自己学到的只是讲解给他人听。（可以采用拍vlog的方式）
-
-
-
-
-
