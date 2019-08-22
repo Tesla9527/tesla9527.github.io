@@ -11,7 +11,7 @@ tags:
 ---
 
 
-[https://www.youtube.com/embed/7iNJyEbYDdc](https://www.youtube.com/embed/7iNJyEbYDdc)
+[https://www.youtube.com/watch?v=7iNJyEbYDdc](https://www.youtube.com/watch?v=7iNJyEbYDdc)
 
 
 大道至简。什么是学习？
