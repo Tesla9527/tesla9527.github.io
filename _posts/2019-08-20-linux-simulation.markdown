@@ -19,3 +19,21 @@ def deadloop():
 deadloop()
 ```
 
+调用子进程
+```python
+import subprocess
+
+
+def run_cmd(cmd):
+    try:
+        process = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        result_f,error_f = process.stdout,process.stderr
+        errors = error_f.read()
+        if errors:
+            raise Exception(errors)
+        else:
+            result = result_f.read().decode()
+            return result
+    except Exception as e:
+        print('Exception: ' + str(e))
+```
