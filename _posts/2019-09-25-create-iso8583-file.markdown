@@ -45,7 +45,7 @@ public class CreateMessage {
         //m.setBinary(true);
         m.setForceSecondaryBitmap(true);
         m.setValue(24, "697", IsoType.NUMERIC, 3); // Function Code
-        m.setValue(48, "010502522219090300000004073011010122001P", IsoType.LLLVAR, 6); // Additional Date
+        m.setValue(48, "010502522219090300000004073011010122001P", IsoType.LLLVAR, 6); // Additional Data
         m.setValue(71, "00000001", IsoType.ALPHA, 8); // Message Number
         FileOutputStream fout = new FileOutputStream("Header.txt", true);
         m.write(fout,0);
