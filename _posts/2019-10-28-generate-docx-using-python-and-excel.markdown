@@ -50,11 +50,13 @@ try:
         runner = table.cell(3,0).paragraphs[0].add_run("期望结果")
         runner.bold = True
         table.cell(3,1).text = i["Excepted result"]
-        table.cell(0,0).width = 1097280    # 1.2 * 914400
+        # set cell width: 1.2 * 914400
+        table.cell(0,0).width = 1097280
         table.cell(1,0).width = 1097280
         table.cell(2,0).width = 1097280
         table.cell(3,0).width = 1097280
-        table.cell(0,1).width = 4846320    # 5.3 * 914400 
+        # set cell width: 5.3 * 914400
+        table.cell(0,1).width = 4846320
         table.cell(1,1).width = 4846320
         table.cell(2,1).width = 4846320
         table.cell(3,1).width = 4846320
