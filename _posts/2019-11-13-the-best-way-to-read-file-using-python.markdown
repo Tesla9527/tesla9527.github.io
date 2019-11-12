@@ -16,7 +16,7 @@ tags:
 ```python
 f = open('myfile.txt')
 for line in f:
-    print(line, end='')
+    print(line.rstrip('\n'))
 ```
 
 最简单的方法，也是最有效的方法，nice！
