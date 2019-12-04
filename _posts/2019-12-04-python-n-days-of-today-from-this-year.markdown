@@ -10,12 +10,10 @@ tags:
     - Python
 ---
 
-##计算给定日期是该年的第几天
 
 ```python
 def count(year,month,day):
     count = 0
-    #判断该年是平年还是闰年
     if year%400==0 or (year%4==0 and year%100!=0):
         print(f'{year}年是闰年，2月份有29天！')
         li1 = [31,29,31,30,31,30,31,31,30,31,30,31]
