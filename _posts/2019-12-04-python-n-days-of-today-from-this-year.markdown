@@ -10,9 +10,9 @@ tags:
     - Python
 ---
 
+##计算给定日期是该年的第几天
 
 ```python
-#计算给定日期是该年的第几天
 def count(year,month,day):
     count = 0
     #判断该年是平年还是闰年
