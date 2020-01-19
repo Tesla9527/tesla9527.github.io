@@ -1,0 +1,37 @@
+---
+layout:     post
+title:      "斐讯N1小钢炮PT下载同时挂载samba局域网共享"
+subtitle:   ""
+date:       2020-01-19
+author:     "Tesla9527"
+header-img: "img/vancleefarpels.jpg"
+catalog:    false
+tags:
+    - Python
+---
+
+
+为什么会买一个斐讯N1用来PT下载呢？之前自己也买了一个NAS，但是噪音实在是有点大，哪怕把风扇拔掉了，也有移动硬盘转动的声音。看到网上说N1刷完小钢炮系统后，运行非常稳定。所以就在拼多多上入手了一个。
+
+我的需求：
+1. 7×24小时挂载PT进行下载。
+2. 可以通过Samba进行局域网共享，这样在家里的时候，可以躺在床上用手机看，也可以躺在沙发上用电视看，而且不用再考来考去。
+3. 静音。
+4. 之前在NAS上下载了很多电影电视剧，但其实大部分都没有看完。所以没必要弄很大容量的硬盘。假如说一天看一部电影或者2集电视剧，大概需要5G左右的容量。一个月才150G，买个256G的固态硬盘就可以了。看完之后的资源，把种子和资源一起删掉，再重新下载新的。循环着来，完全够用了。
+
+N1小钢炮系统测试结果
+1. 下载速度
+![img](/img/in-post/n1/download.png)
+
+2. 局域网内拷贝速度
+![img](/img/in-post/n1/copy.png)
+
+3. 局域网内通过手机观看缓冲速度
+![img](/img/in-post/n1/mobile.jpg)
+
+N1小钢炮系统samba设置方法
+![img](/img/in-post/n1/samba-1.png)
+1. 新建guest用户
+![img](/img/in-post/n1/samba-2.png)
+2. 设置共享目录
+![img](/img/in-post/n1/samba-3.png)
