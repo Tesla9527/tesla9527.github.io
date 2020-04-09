@@ -5,7 +5,7 @@ subtitle:   ""
 date:       2020-04-09
 author:     "Tesla9527"
 header-img: "img/vancleefarpels.jpg"
-catalog:    false
+catalog:    true
 tags:
     - python
     - selenium
