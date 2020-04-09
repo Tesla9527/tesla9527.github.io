@@ -40,22 +40,14 @@ class BrowserEngine(object):
 
 ## base_page.py
 ```python
-from .browser_engine import BrowserEngine
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-# 需要二次封装的方法都写在这里
 class BasePage:
-    chrome_driver_path = '../driver/chromedriver.exe'
-
     def __init__(self, selenium_driver):
         self.driver = selenium_driver
-        # 上面的driver是当参数传入的,因为没有变量声明,所以driver的方法不能自动获取,会比较麻烦,所以在写当前page
-        # 的操作方法时,可以把上面一句注释掉,下面一句打开,写完之后再恢复。
-        # self.driver = BrowserEngine.get_driver()
 
-    # *loc任意数量的位置参数（带单个星号参数）
     def find_element(self, *loc):
         try:
             WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(loc))
@@ -73,7 +65,6 @@ import allure
 
 
 class BaiduHomePage(BasePage):
-    # 个人感觉不太喜欢把页面元素，和操作脚本再单独分开，因为读起来累。
     search_box_loc = (By.ID, "kw")
     search_button_loc = (By.ID, "su")
 
@@ -94,8 +85,6 @@ class BaiduHomePage(BasePage):
         title = self.driver.title
         print(title)
         assert verify_char == title
-
-
 ```
 
 ## test_baidu_search.py
@@ -141,17 +130,14 @@ from PIL import ImageGrab
 from io import BytesIO
 
 
-# 钩子，用来钩住失败
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
 def pytest_runtest_makereport():
     outcome = yield
     rep = outcome.get_result()
-    # we only look at actual failing test calls, not setup/teardown
     if rep.when == "call" and rep.failed:
         with BytesIO() as output:
             img = ImageGrab.grab()
             img.save(output, 'PNG')
             data = output.getvalue()
-        # 将异常截图附加到allure报告中
         allure.attach(data, name="异常截图", attachment_type=AttachmentType.PNG)
 ```
