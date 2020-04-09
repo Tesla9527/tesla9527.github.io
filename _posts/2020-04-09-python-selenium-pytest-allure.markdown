@@ -14,13 +14,15 @@ tags:
 ---
 
 ## 目的
-之前使用过C#，Java做过自动化测试，由于在测试技术领域，python几乎可以通吃，所以想把测试技术栈都移到python。在看过不少资料后，决定自己把框架重新搭建一下，期望达到换一个项目也能直接使用，只需要针对不同的测试页面写测试脚本即可。
+之前使用过C#，Java做过自动化测试，由于在测试技术领域，python几乎可以通吃，所以想把测试技术栈都移到python。在看过不少资料后，决定自己把框架重新搭建一下，期望达到换一个项目也能直接使用，只需要针对不同的测试页面写测试脚本即可的目的。选择pytest的原因，是因为pytest是一个非常不错的测试框架，而且在接口测试，单元测试等中也可以使用，而且能很好地和allure报告结合。allure报告是一个非常漂亮高大上的报告，能很方便地和CI集成，整个测试执行完毕后，测试报告结果是可以指定在测试代码目录外的其他目录的，所以看上去很整洁干净。
 
 ## 框架的目录结构
 
 ![img](/img/in-post/webauto/framework.png)
 
 ## browser_engine.py
+
+用来实现一个webdirver的单例
 ```python
 from selenium import webdriver
 
@@ -39,6 +41,8 @@ class BrowserEngine(object):
 ```
 
 ## base_page.py
+
+用来封装webdriver的方法，目前只把查找元素和隐式等待进行封装，其他的根据需要再添加即可。
 ```python
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -57,6 +61,8 @@ class BasePage:
 ```
 
 ## baidu_homepage.py
+
+这是百度搜索页面的元素定位和操作。虽然测试内容简单，但是思想都在里面了。其他的无非就是不同的页面，不同的元素定位和操作。
 ```python
 import time
 from po.base_page import BasePage
@@ -88,6 +94,8 @@ class BaiduHomePage(BasePage):
 ```
 
 ## test_baidu_search.py
+
+拼接起来的百度搜索页面测试用例，其中用到了pytest的parametrize来实现参数化。若有其他的需求，比如数据驱动，可以根据需求选择用excel或yaml或python字典等来存放测试数据。
 ```python
 import sys
 sys.path.append("..")
@@ -122,6 +130,8 @@ if __name__ == '__main__':
 ```
 
 ## conftest.py
+
+这个pytest框架中的特定文件，必须写成conftest.py，我在这里主要写了1个钩子函数，用来监听测试用例的执行情况，若发现失败，会自动将失败当时的页面进行截图，并保存到allure报告中。
 ```python
 import pytest
 import allure
@@ -141,3 +151,21 @@ def pytest_runtest_makereport():
             data = output.getvalue()
         allure.attach(data, name="异常截图", attachment_type=AttachmentType.PNG)
 ```
+
+## 脚本的执行方法
+
+1. 先新建2个目录，用来存放allure结果和html报告。比如说allure结果E:\my_allure_results，html报告E:\my_allure_html
+2. 在命令行中切换到testcase目录，执行pytest --alluredir=E:\my_allure_results
+3. 查看报告，执行allure serve E:\my_allure_results
+4. 生成html报告，执行allure generate E:\my_allure_results -o E:\my_allure_html
+
+
+## allure模块的安装
+
+```
+pip install allure-pytest
+```
+
+## 测试报告样例展示
+
+![img](/img/in-post/webauto/demo_result_show.png)
