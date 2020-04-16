@@ -735,6 +735,7 @@ pre code {
 .intro-header .post-heading h1 {
   font-size: 30px;
   margin-bottom: 24px;
+  word-break: break-all;
 }
 .intro-header .post-heading .subheading,
 .intro-header .post-heading .meta {
