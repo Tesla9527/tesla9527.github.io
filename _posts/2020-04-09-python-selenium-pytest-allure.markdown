@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "python+selenium+pytest+allure做web自动化测试"
+title:      "python selenium pytest allure做web自动化测试"
 subtitle:   ""
 date:       2020-04-09
 author:     "Tesla9527"
