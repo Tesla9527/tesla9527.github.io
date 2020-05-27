@@ -171,3 +171,7 @@ pip install allure-pytest
 ## 测试报告样例展示
 
 ![img](/img/in-post/webauto/demo_result_show.png)
+
+## 源码地址
+
+[https://github.com/Tesla9527/webauto_python](https://github.com/Tesla9527/webauto_python)
