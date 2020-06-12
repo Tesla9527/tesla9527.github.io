@@ -14,6 +14,7 @@ tags:
 我的wifi路由器是斐讯K2P，最开始是采用网线连接软路由Lan口和wifi路由器wan口的方式，可以成功上网，就没有继续折腾了。最近发现wifi信号有不太稳的情况，于是决定将K2P设置为AP的方式，应该会好一些。
 
 AP的设置方式（转载至恩山论坛）：
+
 [https://www.right.com.cn/forum/thread-255351-1-1.html](https://www.right.com.cn/forum/thread-255351-1-1.html)
 
 两个路由器组成局域网的方法：
