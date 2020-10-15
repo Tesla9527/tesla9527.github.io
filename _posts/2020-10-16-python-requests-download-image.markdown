@@ -27,5 +27,4 @@ if r.status_code == 200:
     print('Image sucessfully Downloaded: ',filename)
 else:
     print('Image Couldn\'t be retreived')
-
 ```
