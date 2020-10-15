@@ -16,17 +16,17 @@ tags:
 
 下面是转化的过程。我以fastapi生成的swagger文档为例。
 
-1. 找到swagger的链接
+1.找到swagger的链接
 ![img](/img/in-post/swagger-api-postman-python/1.png)
 
-2. 在postman中填入链接并导入
+2.在postman中填入链接并导入
 ![img](/img/in-post/swagger-api-postman-python/2.png)
 
 ![img](/img/in-post/swagger-api-postman-python/3.png)
 
 ![img](/img/in-post/swagger-api-postman-python/4.png)
 
-3. 在选中的接口中，点击code，在弹出框中选择Python - Requests
+3.在选中的接口中，点击code，在弹出框中选择Python - Requests
 ![img](/img/in-post/swagger-api-postman-python/5.png)
 
 ![img](/img/in-post/swagger-api-postman-python/6.png)
