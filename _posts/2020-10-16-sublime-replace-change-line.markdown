@@ -10,10 +10,10 @@ tags:
     - sublime
 ---
 
-1.Ctrl+H调出替换框
-2.在Find中输入要替换的字符
-3.在Replace中输入Ctrl+Shift+Enter
-4.点击Replace All
+1. Ctrl+H调出替换框
+2. 在Find中输入要替换的字符
+3. 在Replace中输入Ctrl+Shift+Enter
+4. 点击Replace All
 
 比如原文件内容为：
 ```
