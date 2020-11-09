@@ -13,9 +13,10 @@ tags:
 
 
 测试方式：
-1.新建一个main.py文件，在命令行中执行python main.py
-2.在浏览器中进入http://127.0.0.1:9000/docs
-3.可以在swagger页面进行测试，也可以导入到postman中进行测试，也可用于接口测试学习。
+
+1. 新建一个main.py文件，在命令行中执行python main.py
+2. 在浏览器中进入http://127.0.0.1:9000/docs
+3. 可以在swagger页面进行测试，也可以导入到postman中进行测试，也可用于接口测试学习。
 
 脚本如下：
 
@@ -38,17 +39,14 @@ fake_db = {
 
 app = FastAPI()
 
-# home page
 @app.get("/", tags=["Root"])
 async def root():
     return {"message": "Welcome to the book library！"}
 
-# get all books
 @app.get("/books/", tags=["Book"])
 async def get_all_books():
     return fake_db
 
-# get a single book
 @app.get("/books/{book_id}", tags=["Book"])
 async def get_single_book(book_id : str):
     if book_id in fake_db.keys():
@@ -56,7 +54,6 @@ async def get_single_book(book_id : str):
     else:
         return {"message": "book not found !"}
 
-# create a single book
 @app.post("/books/", tags=["Book"])
 async def create_book(book: Book):
     book_id = int(max(fake_db.keys()).lstrip('book')) + 1
@@ -64,22 +61,25 @@ async def create_book(book: Book):
     fake_db[book_id] = book
     return fake_db[book_id]
 
-# update a single book
 @app.put("/books/{book_id}", tags=["Book"])
 async def update_book(book_id: str, book: Book):
-    fake_db[book_id] = book
-    return fake_db[book_id]
+    if book_id in fake_db.keys():
+        fake_db[book_id] = book
+        return fake_db[book_id]
+    else:
+        return {"message": "book not found !"}
 
-# delete a single book
 @app.delete("/books/{book_id}", tags=["Book"])
 async def delete_book(book_id: str):
-    del fake_db[book_id]
-    return fake_db
+    if book_id in fake_db.keys():
+        del fake_db[book_id]
+        return fake_db
+    else:
+        return {"message": "book not found !"}
 
 if __name__ == '__main__':
     import uvicorn
     uvicorn.run(app, host='127.0.0.1', port=9000)
-
 ```
 
 swagger页面截图：
