@@ -7,8 +7,7 @@ author:     "Tesla9527"
 header-img: "img/post-bg-alitrip.jpg"
 catalog:    false
 tags:
-    - Python
-    - Locust
+    - 性能测试
 ---
 
 安装最新版Locust
