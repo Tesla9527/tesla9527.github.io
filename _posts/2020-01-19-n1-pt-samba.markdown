@@ -8,8 +8,6 @@ header-img: "img/vancleefarpels.jpg"
 catalog:    false
 tags:
     - 斐讯N1
-    - PT
-    - samba
 ---
 
 
