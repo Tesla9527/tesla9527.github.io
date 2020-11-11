@@ -1,14 +1,13 @@
 ---
 layout:     post
-title:      "wifi路由器设置为软路由的AP"
+title:      "wifi路由器设置为AP模式"
 subtitle:   ""
 date:       2020-06-12
 author:     "Tesla9527"
 header-img: "img/vancleefarpels.jpg"
 catalog:    false
 tags:
-    - 软路由
-    - AP
+    - 路由器
 ---
 
 我的wifi路由器是斐讯K2P，最开始是采用网线连接软路由Lan口和wifi路由器wan口的方式，可以成功上网，就没有继续折腾了。最近发现wifi信号有不太稳的情况，于是决定将K2P设置为AP的方式，应该会好一些。
@@ -26,5 +25,5 @@ AP的设置方式（转载至恩山论坛）：
 进入A路由的方式：输入192.168.5.1
 进入B路由的方式：输入192.168.5.X（前面B设置的LAN口IP）
 
-这里A相当于软路由，B相当于wifi路由器，设置完后，wifi路由器就以软路由的AP方式运行了。
+这里A相当于软路由或者主路由，B相当于wifi路由器，设置完后，wifi路由器就以AP方式运行了。
 ![img](/img/in-post/openwrt/ap.jpg)
