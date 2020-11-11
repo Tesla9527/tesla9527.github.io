@@ -7,8 +7,7 @@ author:     "Tesla9527"
 header-img: "img/post-bg-alitrip.jpg"
 catalog:    false
 tags:
-    - Java
-    - Automation Testing
+    - 自动化测试
 ---
 
 完成后的框架地址：

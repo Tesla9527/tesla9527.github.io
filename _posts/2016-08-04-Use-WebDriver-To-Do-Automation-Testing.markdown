@@ -7,6 +7,6 @@ author:     "Tesla9527"
 header-img: "img/home-bg-art.jpg"
 catalog:    false
 tags:
-    - Automation Testing
+    - 自动化测试
 ---
 整个solution我已经整理在GitHub上了：[https://github.com/Tesla9527/Tesla.CM](https://github.com/Tesla9527/Tesla.CM)
