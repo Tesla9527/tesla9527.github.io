@@ -7,7 +7,7 @@ author:     "Tesla9527"
 header-img: "img/vancleefarpels.jpg"
 catalog:    false
 tags:
-    - Python
+    - python
 ---
 >最近在爬产品数据的时候，为了做产品的唯一性确定，发现用产品的url链接不行，因为相同的产品可能存在于不同的url里面，后来发现产品的货号可以用来做唯一标示，避免了重复数据的入库。但是货号爬下来后，需要做一下处理，要不然可能货号或者一些符号也被包括在里面。需要把爬下来的货号的string进行过滤，只留下英文字母和数字
 

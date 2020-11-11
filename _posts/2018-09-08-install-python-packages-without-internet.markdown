@@ -7,7 +7,7 @@ author:     "Tesla9527"
 header-img: "img/home-bg-o.jpg"
 catalog:    false
 tags:
-    - Python
+    - python
 ---
 
 文章链接：[https://stackoverflow.com/questions/36725843/installing-python-packages-without-internet-and-using-source-code-as-tar-gz-and](https://stackoverflow.com/questions/36725843/installing-python-packages-without-internet-and-using-source-code-as-tar-gz-and)

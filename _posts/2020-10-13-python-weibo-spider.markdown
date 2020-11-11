@@ -7,7 +7,6 @@ author:     "Tesla9527"
 header-img: "img/vancleefarpels.jpg"
 catalog:    false
 tags:
-    - Python
     - 爬虫
 ---
 

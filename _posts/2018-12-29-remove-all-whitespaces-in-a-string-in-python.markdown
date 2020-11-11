@@ -7,8 +7,7 @@ author:     "Tesla9527"
 header-img: "img/vancleefarpels.jpg"
 catalog:    false
 tags:
-    - Python
-    - 爬虫
+    - python
 ---
 在写爬虫的时候，有时候需要把返回的数据做处理。有一种情况是，返回的内容中有很多空格或者乱七八糟的不知名'空格'，所以需要把这些空格去掉或替换掉，试了多种办法，如下办法最好用。
 

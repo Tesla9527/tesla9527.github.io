@@ -7,7 +7,7 @@ author:     "Tesla9527"
 header-img: "img/home-bg-o.jpg"
 catalog:    true
 tags:
-    - Python
+    - python
 ---
 >之前写过一篇用youtube-dl的模块来下载视频的博文，但是今天在使用youtube-dl下载爱奇艺视频的时候竟然失败了。如果使用爱奇艺的客户端进行下载，下载完成之后还需要进行转码，很麻烦。所以想到了之前用的you-get模块，竟然可以下载成功
 

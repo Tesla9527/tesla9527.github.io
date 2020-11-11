@@ -7,7 +7,7 @@ author:     "Tesla9527"
 header-img: "img/home-bg-o.jpg"
 catalog:    false
 tags:
-    - Python
+    - python
 ---
 参考博客[https://blog.csdn.net/baidu_35085676/article/details/68958267](https://blog.csdn.net/baidu_35085676/article/details/68958267),爬取逻辑一样，只是将请求与解析库改为了使用kennethreitz大神的[requests-html](https://github.com/kennethreitz/requests-html/)库
 

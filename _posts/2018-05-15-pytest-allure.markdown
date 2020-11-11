@@ -7,7 +7,7 @@ author:     "Tesla9527"
 header-img: "img/home-bg-o.jpg"
 catalog:    true
 tags:
-    - Python
+    - python
 ---
 最近逛TesterHome论坛，看到有网友在用pytest和allure做测试，然后看了一下allure生成的Report，真是漂亮好看啊，比我之前用的HTMLRunner的报告好看多了，在此mark一下。
 

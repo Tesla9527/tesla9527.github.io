@@ -7,7 +7,7 @@ author:     "Tesla9527"
 header-img: "img/home-bg-o.jpg"
 catalog:    false
 tags:
-    - Python
+    - python
 ---
 
 python3.6版本新增了f-strings方法来格式化字符串，我们看一下效果。

@@ -7,8 +7,8 @@ author:     "Tesla9527"
 header-img: "img/vancleefarpels.jpg"
 catalog:    false
 tags:
-    - Sublime
-    - Python
+    - sublime
+    - python
 ---
 
 工具 -> 编译系统  -> 新编译系统

@@ -7,7 +7,7 @@ author:     "Tesla9527"
 header-img: "img/home-bg-o.jpg"
 catalog:    false
 tags:
-    - Python
+    - python
 ---
 
 脚本如下，逻辑是读取根目录下的所有文件，以UTF-8 with BOM的编码格式打开，然后以UTF-8 without BOM的编码格式保存。如果文件本身是UTF-8 with BOM的编码格式，被处理后会将前面3个字节去掉。如果文件本身是UTF-8 without BOM的编码格式，那么会先以UTF-8 with BOM的编码格式打开（会在前面新增3个字节），然后再以UTF-8 without BOM的编码格式保存（去掉前面新增的3个字节），所以最终的结果是所有文件都被修改为UTF-8 without BOM的编码格式了。

@@ -7,7 +7,7 @@ author:     "Tesla9527"
 header-img: "img/vancleefarpels.jpg"
 catalog:    false
 tags:
-    - Linux
+    - linux
 ---
 
 模拟CPU使用接近100%，如果是多核CPU，将下面脚本同时运行多个就可以。

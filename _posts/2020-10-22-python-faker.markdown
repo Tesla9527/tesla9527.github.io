@@ -8,7 +8,6 @@ header-img: "img/vancleefarpels.jpg"
 catalog:    false
 tags:
     - python
-    - faker
 ---
 
 测试脚本

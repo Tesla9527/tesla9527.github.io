@@ -7,7 +7,7 @@ author:     "Tesla9527"
 header-img: "img/home-bg-o.jpg"
 catalog:    true
 tags:
-    - Python
+    - python
 ---
 >python里面的有些概念，我理解的一直迷迷糊糊的。准备在这篇博客里面整理一下。
 

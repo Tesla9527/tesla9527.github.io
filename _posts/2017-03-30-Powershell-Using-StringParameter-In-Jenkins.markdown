@@ -7,7 +7,7 @@ author:     "Tesla9527"
 header-img: "img/home-bg-art.jpg"
 catalog:    false
 tags:
-    - Jenkins
+    - jenkins
 ---
 一直非常喜欢用powershell来写一些脚本，功能非常强大，就拿获取当前日期来说，就比cmd不知道要高到哪里去了。最近公司在用Jenkins做CI，脚本都是用cmd和python来写的。
 最近一项打包工作，我觉得用powershell来做比较方便一点。安装完powershell插件后，一开始试了试，觉得竟然用不了Jenkins中的变量，瞬间蛋疼了。本来想改为用cmd来操作，但是

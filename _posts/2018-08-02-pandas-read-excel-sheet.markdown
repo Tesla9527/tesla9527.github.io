@@ -7,7 +7,7 @@ author:     "Tesla9527"
 header-img: "img/home-bg-o.jpg"
 catalog:    false
 tags:
-    - Pandas    
+    - pandas
 ---
 
 之前采用的方式如下

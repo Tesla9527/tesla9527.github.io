@@ -7,7 +7,7 @@ author:     "Tesla9527"
 header-img: "img/home-bg-o.jpg"
 catalog:    false
 tags:
-    - Python    
+    - python
 ---
 
 在使用vuejs写完前端后，执行npm run build编译出可用在生产环境的文件。但是提示说必须通过http的方式打开，通过本地文件的方式打开看不到效果的。于是找了一下怎么样在本地起一个http server，后来发现python就可以实现，非常方便。

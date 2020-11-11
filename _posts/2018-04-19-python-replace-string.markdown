@@ -7,7 +7,7 @@ author:     "Tesla9527"
 header-img: "img/post-bg-alitrip.jpg"
 catalog:    false
 tags:
-    - Python
+    - python
 ---
 >在工作中遇到一种需求，需要将一个csv文件中的各个key的值替换到json中的对应的值，写好脚本后运行也正常。但是觉得还可以继续优化，今天使用了一个for循环，使得脚本简练了不少。
 

@@ -8,7 +8,6 @@ header-img: "img/home-bg-art.jpg"
 catalog:    false
 tags:
     - 接口测试
-    - Python
 ---
 >接口测试的目的：项目开发中，接口一般比较早的做好，QA能在UI出现之前对接口进行测试，是对质量比较好的控制。
 

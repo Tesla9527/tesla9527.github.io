@@ -7,7 +7,7 @@ author:     "Tesla9527"
 header-img: "img/post-bg-alitrip.jpg"
 catalog:    false
 tags:
-    - Python
+    - python
 ---
 >转载至[https://zhuanlan.zhihu.com/p/34290391](https://zhuanlan.zhihu.com/p/34290391)
 

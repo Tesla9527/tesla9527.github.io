@@ -7,10 +7,7 @@ author:     "Tesla9527"
 header-img: "img/vancleefarpels.jpg"
 catalog:    true
 tags:
-    - python
-    - selenium
-    - pytest
-    - allure
+    - 自动化测试
 ---
 
 ## 目的

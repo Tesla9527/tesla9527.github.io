@@ -7,7 +7,7 @@ author:     "Tesla9527"
 header-img: "img/home-bg-art.jpg"
 catalog:    false
 tags:
-    - Octopus
+    - octopus
 ---
 
 >在使用TeamCity做完开发过程中的持续集成后，在部署的时候发现很多动作都是重复的，就想是不是也可以自动化掉。后来遇到了Octopus，感觉恰好可以解决这个问题。

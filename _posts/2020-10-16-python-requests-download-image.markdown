@@ -7,7 +7,7 @@ author:     "Tesla9527"
 header-img: "img/vancleefarpels.jpg"
 catalog:    false
 tags:
-    - requests
+    - python
 ---
 
 转载至：[原文地址](https://towardsdatascience.com/how-to-download-an-image-using-python-38a75cfa21c)

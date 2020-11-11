@@ -7,7 +7,7 @@ author:     "Tesla9527"
 header-img: "img/home-bg-art.jpg"
 catalog:    false
 tags:
-    - Python
+    - python
 ---
 Google一下checksumdir进入官网查看说明。
 

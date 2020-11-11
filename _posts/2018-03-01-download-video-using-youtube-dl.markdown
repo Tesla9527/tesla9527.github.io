@@ -7,7 +7,7 @@ author:     "Tesla9527"
 header-img: "img/post-bg-alitrip.jpg"
 catalog:    true
 tags:
-    - Python
+    - python
 ---
 >以前使用过you-get模块来下载视频，但是经常会出现一些问题，特别是下载国内的视频。后来使用youtube-dl模块来下载，发现好用不少，而且还可以下载1080P的视频，很赞。
 

@@ -7,7 +7,7 @@ author:     "Tesla9527"
 header-img: "img/post-bg-alitrip.jpg"
 catalog:    false
 tags:
-    - Mysql
+    - mysql
 ---
 
 ```sql

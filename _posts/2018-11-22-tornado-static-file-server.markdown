@@ -7,8 +7,8 @@ author:     "Tesla9527"
 header-img: "img/vancleefarpels.jpg"
 catalog:    false
 tags:
-    - Python
-    - Tornado
+    - python
+    - tornado
 ---
 >在帮朋友爬取了产品数据后，需要将图片展示到他们做的一个app上，所以需要起一个服务可以通过http的方式访问图片，Google以后找到了这个脚本，发现蛮好用的，速度也快。
 

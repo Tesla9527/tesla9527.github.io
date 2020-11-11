@@ -7,7 +7,7 @@ author:     "Tesla9527"
 header-img: "img/home-bg-art.jpg"
 catalog:    false
 tags:
-    - Python
+    - python
 ---
 使用的是[https://gist.github.com/techtonik/5175896](https://gist.github.com/techtonik/5175896),下面我只是增加了一下对比
 

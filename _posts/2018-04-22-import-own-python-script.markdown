@@ -7,7 +7,7 @@ author:     "Tesla9527"
 header-img: "img/post-bg-alitrip.jpg"
 catalog:    false
 tags:
-    - Python
+    - python
 ---
 >在工作中，自己经常用到了编写的一个写入csv文件的方法，但是每次用的时候都要复制到当前需要使用的脚本中，麻烦且冗余，所以查了一下导入自己编写的python脚本的方法，在此记录一下。
 
