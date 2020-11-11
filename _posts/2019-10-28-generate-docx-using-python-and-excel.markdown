@@ -8,7 +8,6 @@ header-img: "img/vancleefarpels.jpg"
 catalog:    false
 tags:
     - python
-    - 软件测试
 ---
 
 软件测试时，有时候需要在word中做案例截图。首先在word里要有案例描述，期望结果等相关信息。而用例的编写，很多都是用excel编写的。下面的方法就是读取excel中的内容，自动生成word。之后就只需要把案例截图贴上就可以了。
