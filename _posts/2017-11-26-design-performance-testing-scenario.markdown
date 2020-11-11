@@ -7,7 +7,7 @@ author:     "Tesla9527"
 header-img: "img/post-bg-alitrip.jpg"
 catalog:    true
 tags:
-    - Performance Testing
+    - 性能测试
 ---
 
 ## 单事务基准测试
