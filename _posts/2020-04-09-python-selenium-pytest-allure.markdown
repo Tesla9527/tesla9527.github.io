@@ -5,7 +5,6 @@ subtitle:   ""
 date:       2020-04-09
 author:     "Tesla9527"
 header-img: "img/vancleefarpels.jpg"
-catalog:    true
 tags:
     - 自动化测试
 ---
