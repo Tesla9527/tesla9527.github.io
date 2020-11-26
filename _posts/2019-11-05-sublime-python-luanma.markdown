@@ -5,7 +5,6 @@ subtitle:   ""
 date:       2019-11-05
 author:     "Tesla9527"
 header-img: "img/vancleefarpels.jpg"
-catalog:    false
 tags:
     - sublime
     - python

@@ -5,7 +5,6 @@ subtitle:   ""
 date:       2017-11-09
 author:     "Tesla9527"
 header-img: "img/post-bg-alitrip.jpg"
-catalog:    false
 tags:
     - 自动化测试
 ---

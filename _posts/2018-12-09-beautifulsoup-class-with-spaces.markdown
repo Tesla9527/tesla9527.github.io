@@ -5,7 +5,6 @@ subtitle:   ""
 date:       2018-12-09
 author:     "Tesla9527"
 header-img: "img/vancleefarpels.jpg"
-catalog:    false
 tags:
     - python
     - 爬虫

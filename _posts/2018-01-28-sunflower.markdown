@@ -5,7 +5,6 @@ subtitle:   ""
 date:       2018-01-28
 author:     "Tesla9527"
 header-img: "img/post-bg-alitrip.jpg"
-catalog:    false
 tags:
     - 吉他
 ---

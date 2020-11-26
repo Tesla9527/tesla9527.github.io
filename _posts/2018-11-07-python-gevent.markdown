@@ -5,7 +5,6 @@ subtitle:   ""
 date:       2018-11-07
 author:     "Tesla9527"
 header-img: "img/home-bg-o.jpg"
-catalog:    false
 tags:
     - python
 ---

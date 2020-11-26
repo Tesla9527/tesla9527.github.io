@@ -5,7 +5,6 @@ subtitle:   ""
 date:       2017-12-05
 author:     "Tesla9527"
 header-img: "img/post-bg-alitrip.jpg"
-catalog:    false
 tags:
     - route
 ---

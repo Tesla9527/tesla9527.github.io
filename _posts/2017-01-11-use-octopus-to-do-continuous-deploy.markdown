@@ -5,7 +5,6 @@ subtitle:   ""
 date:       2017-01-11
 author:     "Tesla9527"
 header-img: "img/home-bg-art.jpg"
-catalog:    false
 tags:
     - octopus
 ---

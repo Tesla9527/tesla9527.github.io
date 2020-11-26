@@ -5,7 +5,6 @@ subtitle:   ""
 date:       2018-08-02
 author:     "Tesla9527"
 header-img: "img/home-bg-o.jpg"
-catalog:    false
 tags:
     - pandas
 ---

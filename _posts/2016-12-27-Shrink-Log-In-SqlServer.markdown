@@ -5,7 +5,6 @@ subtitle:   ""
 date:       2016-12-27
 author:     "Tesla9527"
 header-img: "img/home-bg-art.jpg"
-catalog:    false
 tags:
     - MS SQL Server
 ---

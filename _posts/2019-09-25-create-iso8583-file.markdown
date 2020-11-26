@@ -5,7 +5,6 @@ subtitle:   ""
 date:       2019-09-25
 author:     "Tesla9527"
 header-img: "img/vancleefarpels.jpg"
-catalog:    false
 tags:
     - ISO8583
 ---

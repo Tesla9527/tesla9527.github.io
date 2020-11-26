@@ -5,7 +5,6 @@ subtitle:   ""
 date:       2020-10-16
 author:     "Tesla9527"
 header-img: "img/vancleefarpels.jpg"
-catalog:    false
 tags:
     - python
 ---

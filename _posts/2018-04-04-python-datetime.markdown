@@ -5,7 +5,6 @@ subtitle:   ""
 date:       2018-04-04
 author:     "Tesla9527"
 header-img: "img/post-bg-alitrip.jpg"
-catalog:    false
 tags:
     - python
 ---

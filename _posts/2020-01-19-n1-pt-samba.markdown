@@ -5,7 +5,6 @@ subtitle:   ""
 date:       2020-01-19
 author:     "Tesla9527"
 header-img: "img/vancleefarpels.jpg"
-catalog:    false
 tags:
     - 斐讯N1
 ---

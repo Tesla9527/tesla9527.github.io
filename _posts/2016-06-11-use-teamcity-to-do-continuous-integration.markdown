@@ -5,7 +5,6 @@ subtitle:   ""
 date:       2016-06-11
 author:     "Tesla9527"
 header-img: "img/post-bg-unix-linux.jpg"
-catalog:    true
 tags:
     - TeamCity
 ---

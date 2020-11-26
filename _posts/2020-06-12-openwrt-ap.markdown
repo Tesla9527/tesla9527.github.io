@@ -5,7 +5,6 @@ subtitle:   ""
 date:       2020-06-12
 author:     "Tesla9527"
 header-img: "img/vancleefarpels.jpg"
-catalog:    false
 tags:
     - 路由器
 ---

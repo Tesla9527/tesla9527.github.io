@@ -5,7 +5,6 @@ subtitle:   ""
 date:       2016-07-17
 author:     "Tesla9527"
 header-img: "img/home-bg-art.jpg"
-catalog:    false
 tags:
     - Powershell
 ---

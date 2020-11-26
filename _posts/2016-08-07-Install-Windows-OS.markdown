@@ -5,7 +5,6 @@ subtitle:   ""
 date:       2016-08-07
 author:     "Tesla9527"
 header-img: "img/home-bg-art.jpg"
-catalog:    false
 tags:
     - Windows
 ---
