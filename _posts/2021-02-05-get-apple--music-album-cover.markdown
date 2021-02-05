@@ -18,11 +18,12 @@ tags:
 ![img](/img/in-post/get-apple--music-album-cover/2.jpg)
 
 将复制的链接贴入如下网站，点击Get the artwork
+
 [https://bendodson.com/projects/apple-music-artwork-finder/](https://bendodson.com/projects/apple-music-artwork-finder/)
 
 ![img](/img/in-post/get-apple--music-album-cover/3.png)
 
-根据需求选择大小版本，选择最大的，就点击Highest Resolution
+根据需求选择大小版本。选择最大的，就点击Highest Resolution
 
 ![img](/img/in-post/get-apple--music-album-cover/4.png)
 
