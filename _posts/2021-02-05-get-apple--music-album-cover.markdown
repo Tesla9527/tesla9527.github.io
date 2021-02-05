@@ -11,21 +11,21 @@ tags:
 ---
 
 
-1. 在Apple Music或iTunes上找到专辑的分享链接
+在Apple Music或iTunes上找到专辑的分享链接
 
 ![img](/img/in-post/get-apple--music-album-cover/1.png)
 
 ![img](/img/in-post/get-apple--music-album-cover/2.jpg)
 
-2. 将复制的链接贴入如下网站，点击Get the artwork
+将复制的链接贴入如下网站，点击Get the artwork
 [https://bendodson.com/projects/apple-music-artwork-finder/](https://bendodson.com/projects/apple-music-artwork-finder/)
 
 ![img](/img/in-post/get-apple--music-album-cover/3.png)
 
-3. 根据需求选择大小版本，选择最大的，就点击Highest Resolution
+根据需求选择大小版本，选择最大的，就点击Highest Resolution
 
 ![img](/img/in-post/get-apple--music-album-cover/4.png)
 
-4. 下载出来的图片如下
+下载出来的图片如下
 
 ![img](/img/in-post/get-apple--music-album-cover/3000x3000bb.jpeg)
