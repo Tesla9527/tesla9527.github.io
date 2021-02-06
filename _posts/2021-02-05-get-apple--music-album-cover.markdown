@@ -11,11 +11,13 @@ tags:
 ---
 
 
-在Apple Music或iTunes上找到专辑的分享链接
+在手机端Apple Music或电脑端iTunes或网页端Apple Music上找到专辑的分享链接
 
 ![img](/img/in-post/get-apple--music-album-cover/1.png)
 
 ![img](/img/in-post/get-apple--music-album-cover/2.jpg)
+
+![img](/img/in-post/get-apple--music-album-cover/5.png)
 
 将复制的链接贴入如下网站，点击Get the artwork
 
