@@ -15,7 +15,9 @@ tags:
 
 设备：J1900软路由，软路由3.0usb口挂载U盘
 
-固件：[19.07.7](https://downloads.openwrt.org/releases/19.07.7/targets/x86/64/openwrt-19.07.7-x86-64-combined-squashfs.img.gz)
+固件：[https://downloads.openwrt.org/releases/19.07.7/targets/x86/64/](https://downloads.openwrt.org/releases/19.07.7/targets/x86/64/)下的combined-squashfs.img.gz
+
+使用网线连接的测试结果如下：
 
 读取速度
 
