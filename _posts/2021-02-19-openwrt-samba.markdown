@@ -14,6 +14,7 @@ tags:
 之前装过各路大神编译的openwrt固件，总有些不稳定，而且samba传输文件也很慢。今天把固件更新为了官方原版的openwrt固件，然后安装了samba服务。过程如下。
 
 ### 替换镜像源
+
 在openwrt页面上进入System->Software，点击Configure opkg，在弹出框中的opkg/distfeeds.conf部分进行替换
 
 原始内容:
@@ -56,11 +57,10 @@ opkg install kmod-usb-uhci
 
 在终端输入reboot或者在页面上重启，重启完毕后，在web界面中就能看到System->Mount Points和Services->Network Shares
 
-### 斐讯N1远程挂载samba目录
-为什么要远程挂载？因为在官方原版的openwrt中安装qbittorrent非常麻烦，openwrt官网上只有安装transmission的教程，没有安装qbittorrent的教程。通过Google搜索出来的安装教程也非常少，安装包也是网友自己编译的。我试了几次没有成功，就放弃了。另外软路由上的transmission，使用起来体验不好，要不就是卡死，要不就是种子丢失，也放弃了。斐讯N1的小钢炮系统，有自带的qbittorrent，就省去了安装的麻烦。通过mount远程的samba，就可以实现通过N1的qbittorrent下载到软路由上挂载的移动硬盘了。而且走的是千兆局域网，软路由接移动硬盘又是用的usb3.0，整体测试下来，速度非常满意。
+### 斐讯N1挂载远程samba目录
+为什么要挂载远程samba？因为在官方原版的openwrt中安装qbittorrent非常麻烦，openwrt官网上只有安装transmission的教程，没有安装qbittorrent的教程。通过Google搜索出来的安装教程也非常少，安装包也是网友自己编译的。我试了几次没有成功，就放弃了。另外软路由上的transmission，使用起来体验不好，要不就是卡死，要不就是种子丢失，也放弃了。斐讯N1的小钢炮系统，有自带的qbittorrent，就省去了安装的麻烦。通过mount远程的samba，就可以实现通过N1的qbittorrent下载到软路由上挂载的移动硬盘了。而且走的是千兆局域网，软路由接移动硬盘又是用的usb3.0，整体测试下来，速度非常满意。
 
 斐讯N1挂载远程samba的脚本：
-
 
 ```
 mount -t cifs -o username=*,password=*,vers=2.0,dir_mode=0777,file_mode=0777 //ip/分享文件夹名称 /media/qb
