@@ -15,6 +15,7 @@ tags:
 
 ### 替换镜像源
 在openwrt页面上进入System->Software，点击Configure opkg，在弹出框中的opkg/distfeeds.conf部分进行替换
+
 原始内容:
 ```
 src/gz openwrt_core http://downloads.openwrt.org/releases/19.07.7/targets/x86/64/packages
