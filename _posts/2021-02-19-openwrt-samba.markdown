@@ -38,7 +38,7 @@ src/gz openwrt_routing http://mirrors.ustc.edu.cn/openwrt/releases/19.07.7/packa
 src/gz openwrt_telephony http://mirrors.ustc.edu.cn/openwrt/releases/19.07.7/packages/x86_64/telephony
 ```
 
-### 安装文件
+### 安装软件包
 
 ```
 opkg update                     #更新软件列表
