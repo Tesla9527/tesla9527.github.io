@@ -39,15 +39,17 @@ src/gz openwrt_telephony http://mirrors.ustc.edu.cn/openwrt/releases/19.07.7/pac
 
 ### 安装文件
 
-opkg update                             #更新软件列表
-opkg install block-mount                #挂载点菜单
-opkg install kmod-usb-storage           #安装usb驱动
-opkg install luci-app-samba4            #SAMBA网络共享服务
-opkg install kmod-fs-ext4               #挂载ext4
-opkg install kmod-fs-vfat               #挂载FAT
-opkg install ntfs-3g                    #挂载NTFS
+```
+opkg update                     #更新软件列表
+opkg install block-mount        #挂载点菜单
+opkg install kmod-usb-storage   #安装usb驱动
+opkg install luci-app-samba4    #SAMBA网络共享服务
+opkg install kmod-fs-ext4       #挂载ext4
+opkg install kmod-fs-vfat       #挂载FAT
+opkg install ntfs-3g            #挂载NTFS
 opkg install kmod-usb-ohci
 opkg install kmod-usb-uhci
+```
 
 ### 重启
 
@@ -90,6 +92,6 @@ mount -t cifs -o username=*,password=*,vers=2.0,dir_mode=0777,file_mode=0777 //i
 
 ### 优点总结
 
-1.J1900软路由和斐讯N1的功耗都非常低，可以一直开机使用。J1900购买时卖家给的电源是12A5A的，换成斐讯N1的12V2A电源也可以正常使用，一点问题没有。
-2.整个数据流转走的是千兆网络和usb3.0，速度快
-3.没有风扇，完全静音。
+1. J1900软路由和斐讯N1的功耗都非常低，可以一直开机使用。J1900购买时卖家给的电源是12A5A的，换成斐讯N1的12V2A电源也可以正常使用，一点问题没有。
+2. 整个数据流转走的是千兆网络和usb3.0，速度快
+3. 没有风扇，完全静音。
