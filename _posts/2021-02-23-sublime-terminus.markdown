@@ -17,6 +17,7 @@ tags:
 使用方法：
 
 1.安装插件Terminus
+
 2.点击Preferences->Package Settings->Terminus->Key Bindings，贴上如下内容
 
 ```
