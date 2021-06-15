@@ -1,13 +1,13 @@
 ---
 layout:     post
-title:      "使用jsonpathng库解析json文件"
+title:      "使用jsonpath_ng库解析json文件"
 subtitle:   ""
 date:       2021-06-15
 author:     "Tesla9527"
 header-img: "img/vancleefarpels.jpg"
 tags:
     - python
-    - jsonpathng
+    - jsonpath_ng
 ---
 
 
