@@ -46,3 +46,5 @@ print(round(9.82501, 2)) # 五后非空就进一
 参考文章
 
 [https://www.yudelei.com/index.php/47.html](https://www.yudelei.com/index.php/47.html)
+
+[https://www.pynote.net/archives/765](https://www.pynote.net/archives/765)
