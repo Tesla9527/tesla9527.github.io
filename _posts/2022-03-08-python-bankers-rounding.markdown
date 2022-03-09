@@ -14,10 +14,10 @@ tags:
 [https://baike.baidu.com/item/银行家舍入/4781630](https://baike.baidu.com/item/银行家舍入/4781630)
 
 
-Python2中的round()是四舍五入，而Python3中的round()是银行家舍入法。
+Python2中的round()是四舍五入法，而Python3中的round()是银行家舍入法。
 
 
-Python3中round()函数银行家舍入法举例
+Python3中round()函数银行家舍入法举例（不推荐使用，会有精度误差）
 
 
 ```python
@@ -42,9 +42,25 @@ print(round(9.82501, 2)) # 五后非空就进一
 9.83
 ```
 
+Python3中使用decimal进行舍入（推荐使用）
+
+```python
+print(decimal.Decimal('2.8250').quantize(decimal.Decimal('.00'), rounding='ROUND_HALF_UP'))  # 四舍五入法
+print(decimal.Decimal('2.8250').quantize(decimal.Decimal('.00'), rounding='ROUND_HALF_EVEN'))  # 银行家舍入法
+```
+
+输出
+
+```
+2.83
+2.82
+```
+
 
 参考文章
 
 [https://www.yudelei.com/index.php/47.html](https://www.yudelei.com/index.php/47.html)
 
 [https://www.pynote.net/archives/765](https://www.pynote.net/archives/765)
+
+[https://cloud.tencent.com/developer/article/1426211](https://cloud.tencent.com/developer/article/1426211)
