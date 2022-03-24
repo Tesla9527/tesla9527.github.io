@@ -4,7 +4,7 @@ title:      "下载Apple Music专辑封面"
 subtitle:   ""
 date:       2021-02-04
 author:     "Tesla9527"
-header-img: "img/vancleefarpels.jpg"
+header-img: "img/taeyeon3.jpg"
 tags:
     - iTunes
     - Apple Music

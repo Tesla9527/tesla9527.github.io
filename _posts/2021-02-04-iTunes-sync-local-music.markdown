@@ -4,7 +4,7 @@ title:      "iTunes同步本地音乐"
 subtitle:   ""
 date:       2021-02-04
 author:     "Tesla9527"
-header-img: "img/vancleefarpels.jpg"
+header-img: "img/taeyeon1.jpg"
 tags:
     - iTunes
 ---
