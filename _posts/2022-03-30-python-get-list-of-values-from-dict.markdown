@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "pyton获取字典中的所有value"
+title:      "python获取字典中的所有value"
 subtitle:   ""
 date:       2022-03-30
 author:     "Tesla9527"
