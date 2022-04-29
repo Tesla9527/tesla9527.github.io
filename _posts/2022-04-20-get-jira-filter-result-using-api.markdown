@@ -4,7 +4,7 @@ title:      "使用jira的api获取jql结果"
 subtitle:   ""
 date:       2022-04-20
 author:     "Tesla9527"
-header-img: "img/post-bg-alitrip.jpg"
+header-img: "img/iu2.jpg"
 tags:
     - jira
     - python
