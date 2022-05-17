@@ -4,7 +4,7 @@ title:      "python获取字典中的所有value"
 subtitle:   ""
 date:       2022-03-30
 author:     "Tesla9527"
-header-img: "img/post-bg-alitrip.jpg"
+header-img: "img/taeyeon3.jpg"
 tags:
     - python
 ---

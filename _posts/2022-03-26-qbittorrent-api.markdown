@@ -4,7 +4,7 @@ title:      "通过qbittorrent的api来控制种子"
 subtitle:   ""
 date:       2022-03-26
 author:     "Tesla9527"
-header-img: "img/post-bg-alitrip.jpg"
+header-img: "img/taeyeon3"
 tags:
     - python
 ---
