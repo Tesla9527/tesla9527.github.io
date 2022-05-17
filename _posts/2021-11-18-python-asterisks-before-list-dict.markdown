@@ -4,7 +4,7 @@ title:      "python的列表、字典前面加星号或2个星号的用法"
 subtitle:   ""
 date:       2021-11-18
 author:     "Tesla9527"
-header-img: "img/todaybing1.jpg"
+header-img: "img/iu3.jpg"
 tags:
     - python
 ---
