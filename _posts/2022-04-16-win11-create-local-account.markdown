@@ -4,7 +4,7 @@ title:      "Win11创建本地账户并设置samba共享"
 subtitle:   ""
 date:       2022-04-16
 author:     "Tesla9527"
-header-img: "img/iu1.jpg"
+header-img: "img/todaybing4.jpg"
 tags:
     - win11
     - samba
