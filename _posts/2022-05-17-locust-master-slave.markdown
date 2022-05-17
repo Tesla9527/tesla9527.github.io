@@ -4,7 +4,7 @@ title:      "locust本机分布式运行"
 subtitle:   ""
 date:       2022-05-17
 author:     "Tesla9527"
-header-img: "img/iu2.jpg"
+header-img: "img/iu3.jpg"
 tags:
     - python
     - locust
