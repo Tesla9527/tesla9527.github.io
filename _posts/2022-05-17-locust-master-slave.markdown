@@ -21,7 +21,6 @@ from locust.env import Environment
 class User(FastHttpUser):
     host = "your_host"
 
-    # 根据域名查询平台信息
     @task
     def index(self):
         with self.client.get("/xxx",catch_response=True) as rp:
