@@ -4,7 +4,7 @@ title:      "将swagger的api导入到postman并生成python脚本"
 subtitle:   ""
 date:       2020-10-15
 author:     "Tesla9527"
-header-img: "img/vancleefarpels.jpg"
+header-img: "img/todaybing1.jpg"
 tags:
     - 接口测试
 ---

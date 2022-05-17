@@ -4,7 +4,7 @@ title:      "Python - Sublime控制台输出中文乱码的解决方案"
 subtitle:   ""
 date:       2019-11-05
 author:     "Tesla9527"
-header-img: "img/vancleefarpels.jpg"
+header-img: "img/todaybing1.jpg"
 tags:
     - sublime
     - python

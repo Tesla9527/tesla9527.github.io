@@ -4,7 +4,7 @@ title:      "locust实战(新版)"
 subtitle:   ""
 date:       2022-01-20
 author:     "Tesla9527"
-header-img: "img/post-bg-alitrip.jpg"
+header-img: "img/todaybing1.jpg"
 tags:
     - 性能测试
 ---

@@ -4,7 +4,7 @@ title:      "使用python的faker库造假数据"
 subtitle:   ""
 date:       2020-10-22
 author:     "Tesla9527"
-header-img: "img/vancleefarpels.jpg"
+header-img: "img/todaybing1.jpg"
 tags:
     - python
 ---

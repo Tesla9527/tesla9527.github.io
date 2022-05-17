@@ -4,7 +4,7 @@ title:      "软路由安装官方原版openwrt和samba服务"
 subtitle:   ""
 date:       2021-02-19
 author:     "Tesla9527"
-header-img: "img/vancleefarpels.jpg"
+header-img: "img/todaybing1.jpg"
 tags:
     - openwrt
     - samba

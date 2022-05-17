@@ -4,7 +4,7 @@ title:      "pytest退出码"
 subtitle:   ""
 date:       2021-06-25
 author:     "Tesla9527"
-header-img: "img/vancleefarpels.jpg"
+header-img: "img/todaybing1.jpg"
 tags:
     - pytest
 ---

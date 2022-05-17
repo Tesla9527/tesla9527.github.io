@@ -4,7 +4,7 @@ title:      "linux使用python脚本同步日期时间"
 subtitle:   ""
 date:       2021-08-30
 author:     "Tesla9527"
-header-img: "img/vancleefarpels.jpg"
+header-img: "img/todaybing1.jpg"
 tags:
     - python
     - ntplib

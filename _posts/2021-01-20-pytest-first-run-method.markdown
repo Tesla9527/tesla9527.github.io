@@ -4,7 +4,7 @@ title:      "pytest定义1个所有测试案例执行前执行的方法"
 subtitle:   ""
 date:       2021-01-20
 author:     "Tesla9527"
-header-img: "img/vancleefarpels.jpg"
+header-img: "img/todaybing1.jpg"
 tags:
     - python
     - pytest

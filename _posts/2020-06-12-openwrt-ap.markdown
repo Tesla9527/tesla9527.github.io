@@ -4,7 +4,7 @@ title:      "wifi路由器设置为AP模式"
 subtitle:   ""
 date:       2020-06-12
 author:     "Tesla9527"
-header-img: "img/vancleefarpels.jpg"
+header-img: "img/todaybing1.jpg"
 tags:
     - 路由器
 ---

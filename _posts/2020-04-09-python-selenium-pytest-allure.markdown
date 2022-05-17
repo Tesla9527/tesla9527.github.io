@@ -4,7 +4,7 @@ title:      "python selenium pytest allure做web自动化测试"
 subtitle:   ""
 date:       2020-04-09
 author:     "Tesla9527"
-header-img: "img/vancleefarpels.jpg"
+header-img: "img/todaybing1.jpg"
 tags:
     - 自动化测试
 ---

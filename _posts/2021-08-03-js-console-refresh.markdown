@@ -4,7 +4,7 @@ title:      "浏览器console控制台自动刷新js代码"
 subtitle:   ""
 date:       2021-08-03
 author:     "Tesla9527"
-header-img: "img/vancleefarpels.jpg"
+header-img: "img/todaybing1.jpg"
 tags:
     - js
 ---

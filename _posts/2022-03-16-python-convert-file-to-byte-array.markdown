@@ -4,7 +4,7 @@ title:      "python读取文件并转换成字节数组"
 subtitle:   ""
 date:       2022-03-16
 author:     "Tesla9527"
-header-img: "img/post-bg-alitrip.jpg"
+header-img: "img/todaybing1.jpg"
 tags:
     - python
 ---

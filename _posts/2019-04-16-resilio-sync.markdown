@@ -4,7 +4,7 @@ title:      "全平台点对点文件传输工具Resilio Sync"
 subtitle:   ""
 date:       2019-04-16
 author:     "Tesla9527"
-header-img: "img/vancleefarpels.jpg"
+header-img: "img/todaybing1.jpg"
 tags:
     - Resilio Sync
 ---
