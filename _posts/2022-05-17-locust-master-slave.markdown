@@ -15,7 +15,6 @@ tags:
 
 ```python
 from locust import FastHttpUser, task
-from locust.env import Environment
 
 
 class User(FastHttpUser):
