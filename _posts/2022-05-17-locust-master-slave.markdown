@@ -62,3 +62,23 @@ if __name__ == "__main__":
     t.start()
 
 ```
+
+这样启动之后，本机输入http://localhost:8089就可以进入web页面了。
+
+
+但有时候我们想通过本机ip+端口的方式打开，这样方便局域网内的其他机器访问。
+
+改动点：
+```
+os.system(f'start locust -f {current_file_name} --master --web-host=0.0.0.0')
+```
+
+
+```
+os.system(f'start locust -f {current_file_name} --worker --master-host=your_ip')
+```
+
+
+```
+rp = requests.get(url="http://your_ip:8089/stop")
+```
