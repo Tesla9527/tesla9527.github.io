@@ -7,8 +7,6 @@ author:     "Tesla9527"
 header-img: "img/todaybing1.jpg"
 tags:
     - python
-    - pycharm
-    - whl
 ---
 
 
