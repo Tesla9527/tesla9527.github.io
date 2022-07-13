@@ -27,3 +27,13 @@ net user username password /add
 2.选择要共享的文件夹，在共享中添加上一步新建的用户。
 
 3.windows功能中开启SMB 1.0/CIFS 文件共享支持（有些播放器只支持samba 1.0）
+
+4.samba突然不能连接的问题
+
+今天突然samba不能连接了
+
+![img](/img/in-post/win11-create-local-account/1.jpg)
+
+![img](/img/in-post/win11-create-local-account/2.jpg)
+
+一开始都从samba本身的问题上去查原因，一度怀疑samba的稳定性。后来发现竟然是账号的密码过期了。修改密码后立马可以访问了。
