@@ -37,3 +37,12 @@ net user username password /add
 ![img](/img/in-post/win11-create-local-account/2.jpg)
 
 一开始都从samba本身的问题上去查原因，一度怀疑samba的稳定性。后来发现竟然是账号的密码过期了。修改密码后立马可以访问了。
+
+5.设置本地账户密码永不过期的方法
+
+[https://blog.csdn.net/rainforest_c/article/details/122818217](https://blog.csdn.net/rainforest_c/article/details/122818217)
+
+
+效果：
+
+![img](/img/in-post/win11-create-local-account/3.jpg)
