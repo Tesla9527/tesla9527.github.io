@@ -10,7 +10,7 @@ tags:
 ---
 
 
-示例：
+示例:
 
 ```python
 fruits = ['lemon', 'pear', 'watermelon', 'tomato']
@@ -25,7 +25,7 @@ print({**person, 'weight': 155})
 
 ```
 
-输出：
+输出:
 ```
 lemon pear watermelon tomato
 name age height
@@ -34,4 +34,18 @@ name age height
 [1, 2, 3, 'lemon', 'pear', 'watermelon', 'tomato']
 ['name', 'age', 'height', 'weight']
 {'name': '刘林', 'age': 32, 'height': 172, 'weight': 155}
+```
+
+如果想要把字典中某个key的值按照一定的规律改掉，同时将改掉后的整个字典作为结果返回。
+
+如果是一个字典列表，想要把列表中所有字典中的某个key的值改掉，使用下面这种方式，再结合map方法，真的会非常方便。
+
+```python
+person = {'name': '刘林', 'age': 32}
+print({**person, 'age': 18})
+```
+
+输出:
+```
+{'name': '刘林', 'age': 18}
 ```
